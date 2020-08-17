@@ -22,7 +22,7 @@
     "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
-    "requireForBlockBody": false,
+    "requireForBlockBody": "off",
     "@typescript-eslint/quotes": "off",
     "import/extensions": [
       "error",
