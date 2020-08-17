@@ -1,20 +1,20 @@
-interface Food {
+export interface Food {
   title: string;
-  food_description: string;
+  foodDescription: string;
   price: string;
 }
 
-interface Carousel {
+export interface CarouselProps {
   images: string[];
   seconds: number;
   fill?: boolean;
 }
 
-interface Layout {
+export interface LayoutProps {
   PhotoContainer?: JSX.Element;
   TextContainer?: JSX.Element;
 }
 
-interface FoodList {
+export interface FoodListProps {
   List: Food[];
 }

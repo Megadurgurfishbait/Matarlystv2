@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import { Colors } from '.';
 import { grommet } from 'grommet/themes';
 import { deepMerge } from 'grommet/utils';
+import { Colors } from '.';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -41,8 +41,5 @@ export const themeCustom = deepMerge(grommet, {
   },
   menu: {
     background: `${Colors.mainColor}`,
-    extend: () => {
-      width: '200px';
-    },
   },
 });

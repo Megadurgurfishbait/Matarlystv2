@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Components
-import { Box } from 'grommet';
 import { Carousel, MenuTab } from '@/components';
+import { Box } from 'grommet';
 import { Layout } from '@/Layouts';
 
 //  Harry Styles
-import { GlobalStyle } from '../Styles';
+import { GlobalStyle } from '@/Styles';
 
-import * as FakeData from '../FakeData';
+import * as FakeData from '@/FakeData';
 
 const Menu: React.FC<{}> = () => (
   <Box fill="vertical">

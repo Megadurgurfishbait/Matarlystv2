@@ -24,6 +24,9 @@
     "react/jsx-props-no-spreading": "off",
     "requireForBlockBody": "off",
     "@typescript-eslint/quotes": "off",
+    "arrow-parens": "off",
+    "quotes":"off",
+    "linebreak-style": ["error", "windows"],
     "import/extensions": [
       "error",
       "ignorePackages",

@@ -1,3 +1,5 @@
+import React from 'react';
+import { Food } from '@/Models/';
 import { FoodList } from '@/components';
 
 // Harry Styles

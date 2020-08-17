@@ -8,9 +8,9 @@ interface Font {
 export function Font({
   fontsize = 16,
   fontweight = 400,
-  fontfamily = 'Roboto',
+  fontfamily = `Roboto`,
   letterspacing = 1,
-}: Font) {
+}: Font): string {
   return `
             font-size: ${fontsize}px;
             font-family: ${fontfamily};

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { Colors } from '@/Styles';
 
 const Container = styled.footer`
@@ -20,16 +19,16 @@ const List = styled.ul`
   list-style: none;
   margin: 0px;
   align-items: center;
+`;
 
-  & > li {
-    padding: 0px 12px;
-    margin: 0px;
-    line-height: 12px;
-    color: ${Colors.thirdColor};
-    &:not(:first-child) {
-      border-left: 2px solid ${Colors.secondaryColor};
-    }
+const Li = styled.li`
+  padding: 0px 12px;
+  margin: 0px;
+  line-height: 12px;
+  color: ${Colors.thirdColor};
+  &:not(:first-child) {
+    border-left: 2px solid ${Colors.secondaryColor};
   }
 `;
 
-export { Container, List };
+export { Container, List, Li };

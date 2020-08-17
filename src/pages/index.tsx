@@ -1,19 +1,21 @@
 import React from 'react';
 
 // Components
+import { Carousel } from '@/components';
 import { Box } from 'grommet';
 import { Layout } from '@/Layouts/';
-import { Carousel } from '@/components';
 
 // Harry Styles
-import { GlobalStyle } from '../Styles';
+import { GlobalStyle } from '@/Styles';
 
-const images = ['/images/land-pic1.jpg', '/images/land-pic2.jpg'];
+import { HomeImages } from '@/FakeData';
 
 const Home: React.FC<{}> = () => (
   <Box className="container" align="start" height="100vh">
     <GlobalStyle />
-    <Layout PhotoContainer={<Carousel fill seconds={7} images={images} />} />
+    <Layout
+      PhotoContainer={<Carousel fill seconds={7} images={HomeImages} />}
+    />
   </Box>
 );
 

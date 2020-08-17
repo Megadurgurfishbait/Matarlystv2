@@ -7,25 +7,30 @@ import { Footer, Header } from '@/components';
 // Harry Styles
 import { Colors, themeCustom } from '@/Styles';
 
+import { LayoutProps } from '@/Models';
+
 const TextAndPhoto = [
-  { name: 'footer', start: [1, 1], end: [2, 1] },
-  { name: 'photoGrid', start: [2, 0], end: [2, 0] },
-  { name: 'textGrid', start: [1, 0], end: [1, 0] },
+  { name: `footer`, start: [1, 1], end: [2, 1] },
+  { name: `photoGrid`, start: [2, 0], end: [2, 0] },
+  { name: `textGrid`, start: [1, 0], end: [1, 0] },
 ];
 
 const OnlyPhoto = [
-  { name: 'footer', start: [1, 1], end: [2, 1] },
-  { name: 'photoGrid', start: [1, 0], end: [2, 0] },
+  { name: `footer`, start: [1, 1], end: [2, 1] },
+  { name: `photoGrid`, start: [1, 0], end: [2, 0] },
 ];
 
-export const Layout: React.FC<Layout> = ({ PhotoContainer, TextContainer }) => (
+export const Layout: React.FC<LayoutProps> = ({
+  PhotoContainer,
+  TextContainer,
+}) => (
   <Grommet full theme={themeCustom}>
     <Box fill justify="between" background={Colors.mainColor}>
       <Header />
       <Grid
-        fill={true}
-        rows={['flex', '40px']}
-        columns={['5%', '45%', '45%', '5%']}
+        fill
+        rows={[`flex`, `40px`]}
+        columns={[`5%`, `45%`, `45%`, `5%`]}
         areas={TextContainer ? TextAndPhoto : OnlyPhoto}
       >
         <Box gridArea="photoGrid" background={Colors.mainColor}>

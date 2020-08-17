@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-newline */
 import { Box, Tabs, Tab } from 'grommet';
 import styled from 'styled-components';
 import { Colors } from '@/Styles';
