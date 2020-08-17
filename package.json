@@ -32,9 +32,18 @@
     ]
   },
   "dependencies": {
+    "@types/react-burger-menu": "^2.6.1",
+    "@types/styled-components": "^5.1.2",
+    "graphql": "^15.3.0",
+    "graphql-request": "^3.0.0",
+    "grommet": "^2.14.0",
+    "layout-styled-components": "^0.1.13",
     "next": "^9.4.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-burger-menu": "^2.7.1",
+    "react-dom": "^16.13.1",
+    "react-responsive-carousel": "^3.2.9",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -45,6 +54,7 @@
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.11.1",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
     "eslint": "^6.8.0",
