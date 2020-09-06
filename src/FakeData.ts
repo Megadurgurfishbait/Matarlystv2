@@ -29,6 +29,6 @@ const Matsedill: Food[] = [
 ];
 
 const images = [`/images/pic1.jpg`, `/images/pic2.jpg`, `/images/pic3.jpg`];
-const HomeImages = [`/images/land-pic1.jpg`, `/images/land-pic2.jpg`];
+const HomeImages = [`/images/kaefa.jpg`, `/images/land-pic2.jpg`];
 
 export { Matsedill, images, HomeImages };

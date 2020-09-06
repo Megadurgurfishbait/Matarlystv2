@@ -12,7 +12,8 @@ const GridArea = [
 
 const FoodListItem = (items: Food): JSX.Element => (
   <FL.StyledGrid
-    rows={[`25px`, `40px`, `20px`]}
+    fill
+    rows={[`25px`, `50px`]}
     columns={[`flex`, `xsmall`]}
     areas={GridArea}
     key={items.title}
@@ -23,7 +24,7 @@ const FoodListItem = (items: Food): JSX.Element => (
     <FL.Box gridArea="Food">
       <FL.StyledDescription>{items.foodDescription}</FL.StyledDescription>
     </FL.Box>
-    <FL.Box gridArea="Price" align="center" justify="center">
+    <FL.Box gridArea="Price">
       <FL.StyledPrice>{items.price}</FL.StyledPrice>
     </FL.Box>
   </FL.StyledGrid>

@@ -1,5 +1,6 @@
 import { Carousel, Image } from 'grommet';
 import styled from 'styled-components';
+import { device } from '@/Styles/BP';
 
 const StyledCarousel = styled(Carousel)`
   height: 100%;
@@ -10,6 +11,11 @@ const StyledCarousel = styled(Carousel)`
 const StyledImage = styled(Image)`
   height: 100%;
   width: 100%;
+  object-fit: cover;
+
+  @media ${device.largePhone} {
+    object-fit: cover;
+  }
 `;
 
 export { StyledCarousel, StyledImage };

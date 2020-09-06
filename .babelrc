@@ -1,16 +1,48 @@
 {
-  "presets": [["next/babel"]],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          { "ssr": true, "displayName": true, "preprocess": false }
+        ],
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "@": "./src"
+            },
+            "extensions": [".js", ".ts", ".jsx", ".tsx"]
+          }
+        ]
+      ],
+      "presets": ["next/babel"]
+    },
+    "production": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          { "ssr": true, "displayName": true, "preprocess": false }
+        ],
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "@": "./src"
+            },
+            "extensions": [".js", ".ts", ".jsx", ".tsx"]
+          }
+        ]
+      ],
+      "presets": ["next/babel"]
+    }
+  },
   "plugins": [
     [
-      "module-resolver",
-      {
-        "root": ["./src"],
-        "alias": {
-          "@": "./src"
-        },
-        "extensions": [".js", ".ts", ".jsx", ".tsx"]
-      }
-    ],
-    "babel-plugin-styled-components"
+      "babel-plugin-styled-components",
+      { "ssr": true, "displayName": true, "preprocess": false }
+    ]
   ]
 }

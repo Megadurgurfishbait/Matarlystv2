@@ -1,10 +1,11 @@
 import { Text, Box, Image } from 'grommet';
 import Link from 'next/link';
-import { bubble as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import styled from 'styled-components';
 
 // Styles
 import { Font, Colors } from '@/Styles';
+import { device } from '@/Styles/BP';
 
 const StyledLink = styled(Link)``;
 const StyledSpan = styled.span`
@@ -45,11 +46,16 @@ const StyledText = styled(Text)`
 `;
 
 const StyledBoxInner = styled(Box)`
-  padding: 10px 30px;
+  padding: 0px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
+
+  @media ${device.large} {
+    padding: 0px 30px;
+    display: none;
+  }
 `;
 
 const StyledBoxOuter = styled(Box)`
@@ -58,6 +64,10 @@ const StyledBoxOuter = styled(Box)`
   min-height: 100px;
   position: fixed;
   z-index: 50;
+
+  @media ${device.large} {
+    background-color: transparent;
+  }
 `;
 
 const StyledBurgerMenu = {

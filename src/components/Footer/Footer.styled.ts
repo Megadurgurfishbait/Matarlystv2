@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { Colors } from '@/Styles';
+import { device } from '@/Styles/BP';
 
 const Container = styled.footer`
   display: flex;
-  height: 100%;
+  height: 25px;
   z-index: 100;
   background-color: ${Colors.mainColor};
   margin: 0px;
@@ -12,6 +13,17 @@ const Container = styled.footer`
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 1px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+  @media ${device.largePhone} {
+    width: 100vw;
+    justify-content: center;
+  }
 `;
 
 const List = styled.ul`
@@ -19,6 +31,10 @@ const List = styled.ul`
   list-style: none;
   margin: 0px;
   align-items: center;
+
+  @media ${device.largePhone} {
+    padding: 0px;
+  }
 `;
 
 const Li = styled.li`
@@ -28,6 +44,16 @@ const Li = styled.li`
   color: ${Colors.thirdColor};
   &:not(:first-child) {
     border-left: 2px solid ${Colors.secondaryColor};
+  }
+
+  @media ${device.largePhone} {
+    font-size: 10px;
+    letter-spacing: 0px;
+    padding: 0px 6px;
+  }
+
+  @media ${device.smallPhone} {
+    padding: 0px 2px;
   }
 `;
 
