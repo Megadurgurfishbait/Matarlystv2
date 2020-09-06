@@ -34,6 +34,7 @@ export const Layout: React.FC<LayoutProps> = ({
       <Box height="100%" justify="between" background={Colors.mainColor}>
         <Header />
         <StyledGrid
+          fill
           rows={[`flex`]}
           columns={[`5%`, `45%`, `45%`, `5%`]}
           areas={WhatToShow}

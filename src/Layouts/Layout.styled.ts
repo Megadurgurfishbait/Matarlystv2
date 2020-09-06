@@ -14,7 +14,8 @@ const StyledGrid = styled(Grid)`
   height: 100%;
   @media ${device.largePhone} {
     align-items: center;
-    grid-template-columns: 0% 50% 50% 0%;
+    grid-template-areas: '. textGrid textGrid .';
+    gridgrid-template-columns: 0% 50% 50% 0%;
   }
 `;
 
