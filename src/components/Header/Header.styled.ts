@@ -9,10 +9,10 @@ import { device } from '@/Styles/BP';
 
 const StyledLink = styled(Link)``;
 const StyledSpan = styled.span`
-  background-color: ${Colors.secondaryColor};
+  background-color: #ad6945;
   padding: 5px;
   margin: 5px 0px;
-  transform: skewX(-8deg);
+
   border-radius: 5px;
 `;
 const StyledImage = styled(Image)`
@@ -25,9 +25,15 @@ const StyledImage = styled(Image)`
   }
 `;
 const StyledAnchor = styled.a`
-  ${Font({ fontsize: 24, fontweight: 800, letterspacing: 1.1 })}
-  color: ${Colors.mainColor};
+  ${Font({
+    fontsize: 24,
+    fontweight: 400,
+    letterspacing: 1.1,
+    fontfamily: `Raleway`,
+  })}
+  color: white;
   margin: 10px 0px;
+  text-transform: uppercase;
 
   &:hover {
     cursor: pointer;

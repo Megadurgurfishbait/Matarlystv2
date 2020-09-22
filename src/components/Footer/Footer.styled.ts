@@ -4,7 +4,7 @@ import { device } from '@/Styles/BP';
 
 const Container = styled.footer`
   display: flex;
-  height: 25px;
+  height: 50px;
   z-index: 100;
   background-color: ${Colors.mainColor};
   margin: 0px;

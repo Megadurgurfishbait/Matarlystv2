@@ -28,7 +28,7 @@ export const Layout: React.FC<LayoutProps> = ({
   if (Min(bp.large)) WhatToShow = TextAndPhoto;
   if (Max(bp.large - 1)) WhatToShow = Phone;
   if (!TextContainer) WhatToShow = OnlyPhoto;
-  console.log(WhatToShow);
+
   return (
     <Grommet full theme={themeCustom}>
       <Box height="100%" justify="between" background={Colors.mainColor}>

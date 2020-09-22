@@ -1,51 +1,53 @@
+/* eslint-disable object-curly-newline */
 import { Food } from '@/Models';
 
 const Matsedill: Food[] = [
   {
-    title: `Huevos Rotos – Brotin egg`,
-    foodDescription: `2x spæld egg, 3 sneiðar hráskinka, lítill skammtur franskar í svarta skál`,
-    price: `4.000 ISK`,
+    title: `Hvítlauks chili risa rækjur`,
+    foodDescription: `Hvítlaukschili risa rækjur, kirsuberjatómatar, steinselja`,
+    price: `1.490 ISK`,
   },
   {
-    title: `Amma Lillian`,
-    foodDescription: `Rúgbrauðssneið með heitri kæfu, beikoni, sveppum, ofnbökuðum rauðbeðum? og rifsberjahlaupi`,
-    price: `6.000 ISK`,
+    title: `Huevos Rotos`,
+    foodDescription: `Franskar, spælt egg, hráskinka`,
+    price: `1.490 ISK`,
   },
   {
-    title: `Danska drottningin1`,
-    foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
-    price: `5.000 ISK`,
+    title: `Djúpsteiktar rækjur`,
+    foodDescription: `Hrísgrjón, salat, súrsæt sósa`,
+    price: `1.590 ISK`,
   },
   {
-    title: `Danska drottningin2`,
-    foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
-    price: `5.000 ISK`,
-  },
-  {
-    title: `Danska drottningin3`,
-    foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
-    price: `5.000 ISK`,
-  },
-];
-const Matsedill2: Food[] = [
-  {
-    title: `Amma Lillian4`,
-    foodDescription: `Rúgbrauðssneið með heitri kæfu, beikoni, sveppum, ofnbökuðum rauðbeðum? og rifsberjahlaupi`,
-    price: `6.000 ISK`,
-  },
-  {
-    title: `Danska drottningin5`,
-    foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
-    price: `5.000 ISK`,
-  },
-  {
-    title: `Danska drottningin6`,
-    foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
-    price: `5.000 ISK`,
+    title: `Franksar með chili mæjó eða kokteil`,
+    foodDescription: ``,
+    price: `990 ISK`,
   },
 ];
 
-const images = [`/pic1.jpg`, `/pic2.jpg`, `/pic3.jpg`];
-const HomeImages = [`/kaefa.jpg`, `/land-pic2.jpg`];
+const Matsedill2: Food[] = [
+  {
+    title: `Kæfa`,
+    foodDescription: `Heit kæfa, beikon, sveppir, pikklað rauðkál, rifsberjahlaup, piparsósa`,
+    price: `1.590 ISK`,
+  },
+  {
+    title: `Roast Beef`,
+    foodDescription: `Nautakjöt, stökkur laukur, súrsaðar gúrskur, matarlystar remó`,
+    price: `1.590 ISK`,
+  },
+  {
+    title: `Purusteik`,
+    foodDescription: `Purusteik, súrsaðar gúrkur, pikklað rauðkál, piparrótasósa`,
+    price: `1.590 ISK`,
+  },
+  {
+    title: `Rauðspretta`,
+    foodDescription: `Rauðsprett, rækjur, sítrónu mæjó, sökkur laukur, dill`,
+    price: `1.590 ISK`,
+  },
+];
+
+const images = [`/20200910_202807.jpg`, `/20200910_202940.jpg`];
+const HomeImages = [`/kaefa.jpg`, `land-pic1.jpg`];
 
 export { Matsedill, images, HomeImages, Matsedill2 };
