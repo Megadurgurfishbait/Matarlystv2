@@ -96,9 +96,6 @@ const FlexDiv = styled.div<{ dir: string }>`
   justify-content: space-between;
 
   flex-direction: ${props => props.dir};
-
-  @media ${device.large} {
-  }
 `;
 
 export {

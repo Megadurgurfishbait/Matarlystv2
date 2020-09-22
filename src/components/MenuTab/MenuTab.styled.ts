@@ -30,5 +30,10 @@ const StyledTab = styled(Tab)`
     margin-bottom: 0px;
   }
 `;
+const Container = styled(Box)`
+  @media ${device.largePhone} {
+    min-height: 70vh;
+  }
+`;
 
-export { StyledBox, Box, Tabs, StyledTab };
+export { StyledBox, Box, Tabs, StyledTab, Container };

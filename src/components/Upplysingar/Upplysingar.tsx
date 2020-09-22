@@ -1,36 +1,19 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactMapGL, { Marker } from 'react-map-gl';
-import { useMediaQuery } from 'react-responsive';
 
-import { device, breakpoints } from '@/Styles/BP';
 import * as U from './Upplysingar.styled';
 
 const MAPBOX_TOKEN = `pk.eyJ1IjoibWVnYWR1cmd1cmZpc2hiYWl0IiwiYSI6ImNrZWlvYTRpazBtd3UyeHBkYzR4bjNoYjAifQ.UpAA-r5OSTVIPUMxwqCHHw`;
 
 export const Upplysingar: React.FC<{}> = () => {
-  const isTabletOrMobileDevice = useMediaQuery({
-    query: `(max-device-width: ${breakpoints.tablet}px)`,
-  });
-
-  const isLaptop = useMediaQuery({
-    query: `(max-device-width: ${breakpoints.large}px)`,
-  });
-
-  const isPhone = useMediaQuery({
-    query: `(max-device-width: ${breakpoints.largePhone}px)`,
-  });
   const [viewport, setViewport] = React.useState({
+    height: 400,
+    width: 400,
     latitude: 63.9373,
     longitude: -20.992,
     zoom: 15,
   });
-
-  useEffect(() => {
-    setViewport({
-      ...viewport,
-    });
-  }, []);
 
   return (
     <U.Container>
@@ -74,10 +57,11 @@ export const Upplysingar: React.FC<{}> = () => {
       <U.MapBox>
         <ReactMapGL
           mapboxApiAccessToken={MAPBOX_TOKEN}
-          {...viewport}
-          onViewportChange={nextViewport => setViewport(nextViewport)}
           width="100%"
           height="100%"
+          {...viewport}
+          onViewportChange={nextViewport => setViewport(nextViewport)}
+          className="MAP"
         >
           <Marker
             latitude={63.9373}

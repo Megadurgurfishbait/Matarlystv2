@@ -67,6 +67,7 @@ const StyledBoxOuter = styled(Box)`
 
   @media ${device.large} {
     background-color: transparent;
+    width: 100px;
   }
 `;
 

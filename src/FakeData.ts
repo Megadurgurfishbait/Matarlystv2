@@ -12,17 +12,34 @@ const Matsedill: Food[] = [
     price: `6.000 ISK`,
   },
   {
-    title: `Danska drottningin`,
+    title: `Danska drottningin1`,
     foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
     price: `5.000 ISK`,
   },
   {
-    title: `Danska drottningin`,
+    title: `Danska drottningin2`,
     foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
     price: `5.000 ISK`,
   },
   {
-    title: `Danska drottningin`,
+    title: `Danska drottningin3`,
+    foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
+    price: `5.000 ISK`,
+  },
+];
+const Matsedill2: Food[] = [
+  {
+    title: `Amma Lillian4`,
+    foodDescription: `Rúgbrauðssneið með heitri kæfu, beikoni, sveppum, ofnbökuðum rauðbeðum? og rifsberjahlaupi`,
+    price: `6.000 ISK`,
+  },
+  {
+    title: `Danska drottningin5`,
+    foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
+    price: `5.000 ISK`,
+  },
+  {
+    title: `Danska drottningin6`,
     foodDescription: `Rúgbrauðssneið með roastbeef, stökkum lauk, súrsuðum gúrkum, matarlystarremúlaði og rifinni piparrót.`,
     price: `5.000 ISK`,
   },
@@ -31,4 +48,4 @@ const Matsedill: Food[] = [
 const images = [`/pic1.jpg`, `/pic2.jpg`, `/pic3.jpg`];
 const HomeImages = [`/kaefa.jpg`, `/land-pic2.jpg`];
 
-export { Matsedill, images, HomeImages };
+export { Matsedill, images, HomeImages, Matsedill2 };

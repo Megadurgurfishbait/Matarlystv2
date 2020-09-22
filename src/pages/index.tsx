@@ -1,6 +1,6 @@
 import React from 'react';
 // Components
-import { Carousel } from '@/components';
+import { Carousel, Header, Footer } from '@/components';
 import { Box } from 'grommet';
 import { Layout } from '@/Layouts/';
 
@@ -13,9 +13,9 @@ const { HomeImages } = require(`@/FakeData`);
 const Home: React.FC<{}> = () => (
   <Box className="container" align="start" height="100vh">
     <GlobalStyle />
-    <Layout
-      PhotoContainer={<Carousel fill seconds={7} images={HomeImages} />}
-    />
+    <Header />
+    <Carousel fill seconds={7} images={HomeImages} />
+    <Footer />
   </Box>
 );
 

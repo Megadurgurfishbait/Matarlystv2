@@ -12,10 +12,11 @@ const StyledBox = styled(Box)`
 const StyledGrid = styled(Grid)`
   overflow: scroll;
   height: 100%;
-  @media ${device.largePhone} {
+
+  @media ${device.large} {
     align-items: center;
     grid-template-areas: '. textGrid textGrid .';
-    gridgrid-template-columns: 0% 50% 50% 0%;
+    justify-content: center;
   }
 `;
 
