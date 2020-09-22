@@ -5,14 +5,14 @@ import { FoodList } from '@/components';
 // Harry Styles
 import * as MT from './MenuTab.styled';
 
-export const MenuTab: React.FC<{ Matsedill: Food[] }> = ({ Matsedill }) => (
+export const MenuTab: React.FC<{ Matsedill: Food[], Matsedill2: Food[] }> = ({ Matsedill, Matsedill2 }) => (
   <MT.Box>
     <MT.Tabs>
-      <MT.StyledTab title="Brunch">
+      <MT.StyledTab title="Smáréttir">
         <FoodList List={Matsedill} />
       </MT.StyledTab>
-      <MT.StyledTab title="Lunch">
-        <FoodList List={Matsedill} />
+      <MT.StyledTab title="Rúgbrauð">
+        <FoodList List={Matsedill2} />
       </MT.StyledTab>
     </MT.Tabs>
   </MT.Box>

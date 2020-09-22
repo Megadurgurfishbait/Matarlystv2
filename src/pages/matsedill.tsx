@@ -28,7 +28,7 @@ const Menu: React.FC<{}> = () => {
       <GlobalStyle />
       <Layout
         PhotoContainer={<ShowCarousel />}
-        TextContainer={<MenuTab Matsedill={FakeData.Matsedill} />}
+        TextContainer={<MenuTab Matsedill={FakeData.Matsedill} Matsedill2={FakeData.Matsedill2} />}
       />
     </Box>
   );

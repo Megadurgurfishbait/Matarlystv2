@@ -23,7 +23,7 @@ export const Header: React.FC<{}> = () => (
   <H.StyledBoxOuter animation="fadeIn">
     <H.Menu styles={H.StyledBurgerMenu}>
       <H.StyledLink href="/">
-        <H.StyledImage src="/images/logo.png" />
+        <H.StyledImage src="/logo.png" />
       </H.StyledLink>
       {HeaderList.map(li => ListItem(li))}
     </H.Menu>
