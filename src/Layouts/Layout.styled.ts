@@ -12,7 +12,8 @@ const StyledBox = styled(Box)`
 const StyledGrid = styled(Grid)`
   overflow: scroll;
   height: 100%;
-  grid-template-areas: '. textGrid photoGrid .';
+  grid-template-areas: '. textGrid photoGrid .'; // Þetta gæti böggast, en fylgast bara með
+
   @media ${device.large} {
     align-items: center;
     grid-template-areas: '. textGrid textGrid .';

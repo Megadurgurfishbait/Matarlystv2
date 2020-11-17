@@ -14,8 +14,10 @@ import { useMediaQuery } from 'react-responsive';
 import { MenuForPhones } from '@/components/MenuForPhones';
 
 const Menu: React.FC<{}> = () => {
+  const [showPhone, setShowPhone] = React.useState<boolean>(false);
+
   const isTabletOrMobileDevice = useMediaQuery({
-    query: `(max-device-width: 1000px)`,
+    query: `(max-device-width: 600px)`,
   });
 
   const ShowCarousel = (): any =>
@@ -23,11 +25,18 @@ const Menu: React.FC<{}> = () => {
     isTabletOrMobileDevice ? null : (
       <Carousel seconds={8} images={FakeData.images} />
     );
-
+  // Nauðsynlegt, ef að það er refreshað á /Matsedil í síma kemur layout inn.
+  // Svona komumst við hjá því að render'a það því NextJS er serverside renderað fyrst
+  // og runnar Layout Kóðan alltaf fyrst
+  React.useEffect(() => {
+    if (isTabletOrMobileDevice) {
+      setShowPhone(true);
+    }
+  }, [showPhone]);
   return (
     <Box fill="vertical">
       <GlobalStyle />
-      {isTabletOrMobileDevice ? (
+      {showPhone ? (
         <>
           <Header />
           <MenuForPhones />

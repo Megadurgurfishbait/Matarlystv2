@@ -1,5 +1,5 @@
 import React from 'react';
-import {} from 'styled-components';
+
 // Components
 import { Box, Grommet } from 'grommet';
 import { Footer, Header } from '@/components';
@@ -26,7 +26,7 @@ export const Layout: React.FC<LayoutProps> = ({
   let WhatToShow;
 
   if (Min(bp.large)) WhatToShow = TextAndPhoto;
-  if (Max(bp.large - 1)) WhatToShow = Phone;
+  if (Max(bp.smallPhone - 1)) WhatToShow = Phone;
   if (!TextContainer) WhatToShow = OnlyPhoto;
 
   return (
