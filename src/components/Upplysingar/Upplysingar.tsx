@@ -8,8 +8,6 @@ import * as U from './Upplysingar.styled';
 
 const { publicRuntimeConfig } = getConfig();
 
-const MAPBOX_TOKEN = `pk.eyJ1IjoibWVnYWR1cmd1cmZpc2hiYWl0IiwiYSI6ImNrZWlvYTRpazBtd3UyeHBkYzR4bjNoYjAifQ.UpAA-r5OSTVIPUMxwqCHHw`;
-
 export const Upplysingar: React.FC<{}> = () => {
   const [viewport, setViewport] = React.useState({
     height: 400,

@@ -21,25 +21,25 @@ export const LayoutPadding = `padding: 0px 200px`;
 
 export const themeCustom = deepMerge(grommet, {
   tab: {
-    color: `${Colors.thirdColor}`,
+    color: `${Colors.THIRD_COLOR}`,
     active: {
-      color: `${Colors.thirdColor}`,
+      color: `${Colors.THIRD_COLOR}`,
     },
     hover: {
-      color: `${Colors.thirdColor}`,
+      color: `${Colors.THIRD_COLOR}`,
     },
     border: {
-      color: `${Colors.mainColor}`,
+      color: `${Colors.MAIN_COLOR}`,
       size: `xsmall`,
       active: {
-        color: `${Colors.secondaryColor}`,
+        color: `${Colors.SECONDARY_COLOR}`,
       },
       hover: {
-        color: `${Colors.secondaryColor}`,
+        color: `${Colors.SECONDARY_COLOR}`,
       },
     },
   },
   menu: {
-    background: `${Colors.mainColor}`,
+    background: `${Colors.MAIN_COLOR}`,
   },
 });
