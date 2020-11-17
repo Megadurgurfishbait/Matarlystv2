@@ -1,8 +1,7 @@
 import { Box } from 'grommet';
 import { Location } from 'grommet-icons';
 import styled from 'styled-components';
-import { Colors } from '@/Styles';
-import { device } from '@/Styles/BP';
+import { Colors, device } from '@/Styles';
 
 const LocationIconColor = Colors.MAIN_COLOR;
 

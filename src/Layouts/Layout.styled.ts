@@ -2,6 +2,14 @@ import styled from 'styled-components';
 import { Box, Grid } from 'grommet';
 import { device } from '@/Styles/BP';
 
+const LAYOUT_TEXT_AND_PHOTO = [
+  { name: `photoGrid`, start: [2, 0], end: [2, 0] },
+  { name: `textGrid`, start: [1, 0], end: [1, 0] },
+];
+
+const LAYOUT_PHOTO_ONLY = [{ name: `photoGrid`, start: [1, 0], end: [2, 0] }];
+const LAYOUT_PHONE_ONLY = [{ name: `textGrid`, start: [1, 0], end: [2, 0] }];
+
 const StyledBox = styled(Box)`
   align-items: center;
   @media ${device.largePhone} {
@@ -21,4 +29,10 @@ const StyledGrid = styled(Grid)`
   }
 `;
 
-export { StyledBox, StyledGrid };
+export {
+  StyledBox,
+  StyledGrid,
+  LAYOUT_PHONE_ONLY,
+  LAYOUT_TEXT_AND_PHOTO,
+  LAYOUT_PHOTO_ONLY,
+};

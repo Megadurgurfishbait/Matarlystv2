@@ -1,6 +1,6 @@
 import { Carousel, Image } from 'grommet';
 import styled from 'styled-components';
-import { device } from '@/Styles/BP';
+import { device } from '@/Styles';
 
 const StyledCarousel = styled(Carousel)`
   height: 100%;

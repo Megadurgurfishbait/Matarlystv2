@@ -1,8 +1,12 @@
+/* eslint-disable dot-notation */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import getConfig from 'next/config';
 import React from 'react';
 import ReactMapGL, { Marker } from 'react-map-gl';
 
 import * as U from './Upplysingar.styled';
+
+const { publicRuntimeConfig } = getConfig();
 
 const MAPBOX_TOKEN = `pk.eyJ1IjoibWVnYWR1cmd1cmZpc2hiYWl0IiwiYSI6ImNrZWlvYTRpazBtd3UyeHBkYzR4bjNoYjAifQ.UpAA-r5OSTVIPUMxwqCHHw`;
 
@@ -60,7 +64,7 @@ export const Upplysingar: React.FC<{}> = () => {
       </U.StyledBox>
       <U.MapBox>
         <ReactMapGL
-          mapboxApiAccessToken={MAPBOX_TOKEN}
+          mapboxApiAccessToken={publicRuntimeConfig.MAP_ID}
           width="100%"
           height="100%"
           {...viewport}

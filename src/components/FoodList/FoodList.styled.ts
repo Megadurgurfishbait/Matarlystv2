@@ -1,7 +1,6 @@
 import { Box, Text, Grid } from 'grommet';
 import styled from 'styled-components';
-import { Colors, Font } from '@/Styles';
-import { device } from '@/Styles/BP';
+import { Colors, Font, device } from '@/Styles';
 
 const StyledTitle = styled(Text)`
   color: ${Colors.SECONDARY_COLOR};

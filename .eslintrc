@@ -25,6 +25,7 @@
     "requireForBlockBody": "off",
     "@typescript-eslint/quotes": "off",
     "arrow-parens": "off",
+    "object-curly-newline": "off",
     "quotes":"off",
     "linebreak-style": ["error", "windows"],
     "import/extensions": [

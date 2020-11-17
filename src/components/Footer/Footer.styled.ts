@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { Colors } from '@/Styles';
-import { device } from '@/Styles/BP';
+import { Colors, device } from '@/Styles';
 
 const Container = styled.footer`
   display: flex;
