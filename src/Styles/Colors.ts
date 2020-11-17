@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 export const Colors = {
-  mainColor: `#231F1E`,
-  secondaryColor: `#F89663`,
-  thirdColor: `#C1C1C1`,
-  secondaryFont: `#646464`,
+  MAIN_COLOR: `#231F1E`,
+  SECONDARY_COLOR: `#F89663`,
+  THIRD_COLOR: `#C1C1C1`,
+  SECONDARY_FONT_COLOR: `#646464`,
 };

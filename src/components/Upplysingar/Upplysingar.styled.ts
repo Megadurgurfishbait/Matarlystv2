@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Colors } from '@/Styles';
 import { device } from '@/Styles/BP';
 
-const LocationIconColor = Colors.mainColor;
+const LocationIconColor = Colors.MAIN_COLOR;
 
 const Container = styled(Box)`
   padding: 30px 120px 30px 60px;
@@ -39,7 +39,7 @@ const StyledBox = styled(Box)`
   & > label {
     width: max-content;
     padding-bottom: 3px;
-    border-bottom: ${`1px solid ${Colors.secondaryColor}`};
+    border-bottom: ${`1px solid ${Colors.SECONDARY_COLOR}`};
     font-size: 30px;
   }
   & > ul {
@@ -89,7 +89,7 @@ const MapBox = styled(Box)`
   overflow: hidden;
 `;
 const SPAN = styled.span`
-  color: ${Colors.secondaryColor};
+  color: ${Colors.SECONDARY_COLOR};
 `;
 
 const FlexDiv = styled.div<{ dir: string }>`

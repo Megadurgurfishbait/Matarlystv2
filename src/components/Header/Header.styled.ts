@@ -47,7 +47,7 @@ const StyledText = styled(Text)`
   text-align: center;
   align-self: center;
   text-transform: uppercase;
-  color: ${Colors.secondaryColor};
+  color: ${Colors.SECONDARY_COLOR};
   ${Font({
     fontsize: 34,
     fontfamily: `Raleway`,
@@ -69,7 +69,7 @@ const StyledBoxInner = styled(Box)`
 `;
 
 const StyledBoxOuter = styled(Box)`
-  background-color: ${Colors.mainColor};
+  background-color: ${Colors.MAIN_COLOR};
   width: 400px;
   min-height: 100px;
   position: fixed;
@@ -90,7 +90,7 @@ const StyledBurgerMenu = {
     top: `36px`,
   },
   bmBurgerBars: {
-    background: `${Colors.secondaryColor}`,
+    background: `${Colors.SECONDARY_COLOR}`,
     height: `8%`,
   },
   bmBurgerBarsHover: {
@@ -101,20 +101,20 @@ const StyledBurgerMenu = {
     width: `40px`,
   },
   bmCross: {
-    background: `${Colors.secondaryColor}`,
+    background: `${Colors.SECONDARY_COLOR}`,
   },
   bmMenuWrap: {
     position: `fixed`,
   },
   bmMenu: {
-    background: `${Colors.mainColor}`,
+    background: `${Colors.MAIN_COLOR}`,
     padding: `1.0em 1.0em 0`,
     fontSize: `1.15em`,
     overflow: `hidden`,
     width: `100%`,
   },
   bmMorphShape: {
-    fill: `${Colors.mainColor}`,
+    fill: `${Colors.MAIN_COLOR}`,
   },
   bmItemList: {
     padding: `0.8em`,

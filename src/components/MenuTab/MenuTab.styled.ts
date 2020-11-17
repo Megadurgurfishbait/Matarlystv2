@@ -9,7 +9,7 @@ const StyledBox = styled(Box)`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${Colors.mainColor};
+  background-color: ${Colors.MAIN_COLOR};
 
   @media ${device.largePhone} {
     height: max-content;
@@ -23,7 +23,7 @@ const StyledTab = styled(Tab)`
   &:active,
   &[aria-expanded='true'],
   &[aria-selected='true'] {
-    box-shadow: 0px 0px 2px 2px ${Colors.mainColor};
+    box-shadow: 0px 0px 2px 2px ${Colors.MAIN_COLOR};
   }
 
   @media ${device.largePhone} {

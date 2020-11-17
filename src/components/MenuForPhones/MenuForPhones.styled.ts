@@ -10,15 +10,15 @@ const List = styled.ul`
   justify-content: center;
   padding: 0px;
   list-style: none;
-  color: ${Colors.secondaryColor};
+  color: ${Colors.SECONDARY_COLOR};
 `;
 
 const StyledBox = styled(Box)`
-  background-color: ${Colors.mainColor};
+  background-color: ${Colors.MAIN_COLOR};
 `;
 
 const StyledLayer = styled(Layer)`
-  background-color: ${Colors.mainColor};
+  background-color: ${Colors.MAIN_COLOR};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@ const StyledLayer = styled(Layer)`
 
 const StyledButton = styled(Button)`
   border: none;
-  color: ${Colors.secondaryColor};
+  color: ${Colors.SECONDARY_COLOR};
   box-shadow: none;
   &:hover,
   &:active {

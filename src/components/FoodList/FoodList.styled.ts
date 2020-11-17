@@ -4,7 +4,7 @@ import { Colors, Font } from '@/Styles';
 import { device } from '@/Styles/BP';
 
 const StyledTitle = styled(Text)`
-  color: ${Colors.secondaryColor};
+  color: ${Colors.SECONDARY_COLOR};
   letter-spacing: 1.1px;
   ${Font({ fontsize: 26, fontfamily: `Raleway`, fontweight: 600 })}
 
@@ -15,12 +15,10 @@ const StyledTitle = styled(Text)`
   @media ${device.largePhone} {
     font-size: 12px; 
   }
-
-
 `;
 const StyledDescription = styled(Text)`
   line-height: 18px;
-  color: ${Colors.secondaryFont};
+  color: ${Colors.SECONDARY_FONT_COLOR};
   width: 80%;
   margin-top: 8px;
   ${Font({ fontsize: 16, fontfamily: `Segoe UI`, fontweight: 400 })}
@@ -39,7 +37,7 @@ const StyledDescription = styled(Text)`
 
 const StyledPrice = styled(Text)`
   font-family: 'roboto';
-  color: ${Colors.thirdColor};
+  color: ${Colors.THIRD_COLOR};
 
   @media ${device.largePhone} {
     font-size: 12px;

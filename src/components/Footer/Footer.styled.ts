@@ -6,7 +6,7 @@ const Container = styled.footer`
   display: flex;
   height: 50px;
   z-index: 100;
-  background-color: ${Colors.mainColor};
+  background-color: ${Colors.MAIN_COLOR};
   margin: 0px;
   font-family: 'roboto';
   font-size: 12px;
@@ -41,9 +41,9 @@ const Li = styled.li`
   padding: 0px 12px;
   margin: 0px;
   line-height: 12px;
-  color: ${Colors.thirdColor};
+  color: ${Colors.THIRD_COLOR};
   &:not(:first-child) {
-    border-left: 2px solid ${Colors.secondaryColor};
+    border-left: 2px solid ${Colors.SECONDARY_COLOR};
   }
 
   @media ${device.largePhone} {

@@ -1,8 +1,8 @@
 export enum Routes {
-  Matsedill = `/matsedill`,
+  Matsedill = `/Matsedill`,
   Stadurinn = `/Stadurinn`,
-  Facebook = `https://www.facebook.com`,
-  Instagram = `https://www.instagram.com/kaffi.matarlyst/`,
-  Home = `/Home`,
-  Upplysingar = `/upplysingar`,
+  Facebook = `https://www.facebook.com/Matarlyst-Caf%C3%A9-Bar-Restaurant-107006814510537`,
+  Instagram = `https://www.instagram.com/matarlyst.cafe.bar.restaurant/`,
+  Home = `/Heim`,
+  Upplysingar = `/Upplysingar`,
 }
