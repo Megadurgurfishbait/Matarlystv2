@@ -18,6 +18,11 @@
 # misc
 .DS_Store
 .env*
+.prettierrc
+.eslintrc
+.commitlintrc.json
+.babel.rc
+LICENSE.md
 
 # debug
 npm-debug.log*
