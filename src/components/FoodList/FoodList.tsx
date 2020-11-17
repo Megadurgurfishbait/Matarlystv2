@@ -10,7 +10,7 @@ const GridArea = [
   { name: `Price`, start: [1, 0], end: [1, 1] },
 ];
 
-const FoodListItem = (items: Food): JSX.Element => (
+export const FoodListItem = (items: Food): JSX.Element => (
   <FL.StyledGrid
     fill
     rows={[`25px`, `50px`]}

@@ -86,6 +86,7 @@ const MapBox = styled(Box)`
   height: 40%;
   min-height: 200px;
   width: 80%;
+  overflow: hidden;
 `;
 const SPAN = styled.span`
   color: ${Colors.secondaryColor};

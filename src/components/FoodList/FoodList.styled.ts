@@ -8,14 +8,12 @@ const StyledTitle = styled(Text)`
   letter-spacing: 1.1px;
   ${Font({ fontsize: 26, fontfamily: `Raleway`, fontweight: 600 })}
 
-
-
   @media ${device.large} {
     font-size: 22px;
   }
 
   @media ${device.largePhone} {
-    font-size: 14px; 
+    font-size: 12px; 
   }
 
 

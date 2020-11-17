@@ -47,7 +47,30 @@ const Matsedill2: Food[] = [
   },
 ];
 
+const Matsedill3: Food[] = [
+  {
+    title: `Hráskinka`,
+    foodDescription: `Hvítlauksristað brauð, tómatmauk, rucola, parmesan`,
+    price: `1.590 ISK`,
+  },
+  {
+    title: `Djúpsteiktar rækjur`,
+    foodDescription: `Hvítlauksristað brauð, sítrónu, mæjó, kál, dill`,
+    price: `1.590 ISK`,
+  },
+  {
+    title: `Tómatar`,
+    foodDescription: `Hvítlauksristað brauð, Mozzarella, rucola, pestó`,
+    price: `1.590 ISK`,
+  },
+  {
+    title: `Reyktur Lax`,
+    foodDescription: `Hvítlauksristað brauð, hrærð egg, piparrótarsósa, dill`,
+    price: `1.900 ISK`,
+  },
+];
+
 const images = [`/20200910_202807.jpg`, `/20200910_202940.jpg`];
 const HomeImages = [`/kaefa.jpg`, `land-pic1.jpg`];
 
-export { Matsedill, images, HomeImages, Matsedill2 };
+export { Matsedill, images, HomeImages, Matsedill2, Matsedill3 };

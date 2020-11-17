@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Components
-import { Carousel, MenuTab } from '@/components';
+import { Carousel, Header, MenuTab } from '@/components';
 import { Box } from 'grommet';
 import { Layout } from '@/Layouts';
 
@@ -11,6 +11,7 @@ import { GlobalStyle } from '@/Styles';
 
 import * as FakeData from '@/FakeData';
 import { useMediaQuery } from 'react-responsive';
+import { MenuForPhones } from '@/components/MenuForPhones';
 
 const Menu: React.FC<{}> = () => {
   const isTabletOrMobileDevice = useMediaQuery({
@@ -26,15 +27,22 @@ const Menu: React.FC<{}> = () => {
   return (
     <Box fill="vertical">
       <GlobalStyle />
-      <Layout
-        PhotoContainer={<ShowCarousel />}
-        TextContainer={
-          <MenuTab
-            Matsedill={FakeData.Matsedill}
-            Matsedill2={FakeData.Matsedill2}
-          />
-        }
-      />
+      {isTabletOrMobileDevice ? (
+        <>
+          <Header />
+          <MenuForPhones />
+        </>
+      ) : (
+        <Layout
+          PhotoContainer={<ShowCarousel />}
+          TextContainer={
+            <MenuTab
+              Matsedill={FakeData.Matsedill}
+              Matsedill2={FakeData.Matsedill2}
+            />
+          }
+        />
+      )}
     </Box>
   );
 };

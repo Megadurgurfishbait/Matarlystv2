@@ -12,6 +12,10 @@ const { HomeImages } = require(`@/FakeData`);
 const Home: React.FC<{}> = () => (
   <Box className="container" align="start" height="100vh">
     <GlobalStyle />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&family=Roboto+Mono:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
     <Header />
     <Carousel fill seconds={7} images={HomeImages} />
     <Footer />

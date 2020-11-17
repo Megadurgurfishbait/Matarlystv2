@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0px;
     overflow:hidden;
     height: 100vh;
-    
+
 
     & > div {
       height: 100vh;

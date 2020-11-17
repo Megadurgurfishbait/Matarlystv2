@@ -28,7 +28,7 @@ const StyledAnchor = styled.a`
   ${Font({
     fontsize: 24,
     fontweight: 400,
-    letterspacing: 1.1,
+    letterspacing: 0.3,
     fontfamily: `Raleway`,
   })}
   color: white;
@@ -48,7 +48,11 @@ const StyledText = styled(Text)`
   align-self: center;
   text-transform: uppercase;
   color: ${Colors.secondaryColor};
-  ${Font({ fontsize: 34, fontfamily: `Raleway`, letterspacing: 2 })};
+  ${Font({
+    fontsize: 34,
+    fontfamily: `Raleway`,
+    letterspacing: 1,
+  })};
 `;
 
 const StyledBoxInner = styled(Box)`
