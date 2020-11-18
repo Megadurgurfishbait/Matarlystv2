@@ -70,7 +70,7 @@ const ShowMenu = ({ WhatToShow }): JSX.Element => {
   }
 };
 
-export function MenuForPhones() {
+export function MenuForPhones(): JSX.Element {
   const [show, setShow] = React.useState<boolean>();
   const [whatToShow, setWhatToShow] = React.useState<Rettir | undefined>(
     undefined,

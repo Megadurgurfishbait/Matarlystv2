@@ -1,6 +1,13 @@
 /* eslint-disable object-curly-newline */
 
-const images = [`/20200910_202807.jpg`, `/20200910_202940.jpg`];
-const HomeImages = [`/kaefa.jpg`, `land-pic1.jpg`];
+const images = [`/restaurant2.jpg`, `haed-matur.jpg`];
+const HomeImages = [
+  `tacos.jpg`,
+  `restaurant.jpg
+`,
+];
 
-export { images, HomeImages };
+const LoadingImage = `logo-rotate.png`;
+const solidIcon = `logotext.png`;
+
+export { images, HomeImages, LoadingImage, solidIcon };
