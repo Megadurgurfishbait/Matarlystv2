@@ -7,12 +7,12 @@ import * as MT from './MenuTab.styled';
 
 export const MenuTab: React.FC<{ Matsedill: M }> = ({ Matsedill }) => (
   <MT.Container>
-    <MT.Tabs>
+    <MT.StyledTabs>
       {Object.keys(Matsedill).map(v => (
         <MT.StyledTab title={`${v}`}>
           <FoodList List={Matsedill[`${v}`]} />
         </MT.StyledTab>
       ))}
-    </MT.Tabs>
+    </MT.StyledTabs>
   </MT.Container>
 );

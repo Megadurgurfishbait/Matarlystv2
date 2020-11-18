@@ -63,6 +63,9 @@
     ],
     "Mjúk Tortilla": [
       {
+        "Ingred": "Veljið eina úr a, b, c eða d fyrir 1490kr. \n  Tvær fyrir 2490kr. \n Þrjár fyrir 3450kr."
+      },
+      {
         "title": "Djúpsteiktar rækjur",
         "Ingred": "Klettasalat, sítrónu majónes, pikklað rauðkál, dill",
         "numero": "a"
@@ -85,7 +88,7 @@
       {
         "title": "Andartaco",
         "Ingred": "Rifið andalæri, klettasalat, pikklaður rauðlaukur, sesam majónes, sykraðar valhnetur",
-        "numero": ""
+        "price": "1790kr"
       }
     ],
     "Aðalréttir": [

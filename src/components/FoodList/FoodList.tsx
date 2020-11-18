@@ -19,7 +19,11 @@ export const FoodListItem = (items: Food): JSX.Element => (
     key={items.title}
   >
     <FL.Box gridArea="Title">
-      <FL.StyledTitle>{items.title}</FL.StyledTitle>
+      {items.numero ? (
+        <FL.StyledTitle>{`${`${items.numero}. ${items.title}`}`}</FL.StyledTitle>
+      ) : (
+        <FL.StyledTitle>{items.title}</FL.StyledTitle>
+      )}
     </FL.Box>
     <FL.Box gridArea="Food">
       <FL.StyledDescription>{items.Ingred}</FL.StyledDescription>

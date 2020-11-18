@@ -1,5 +1,5 @@
 export interface Food {
-  title: string;
+  title?: string;
   Ingred?: string;
   price?: string;
   numero?: string;

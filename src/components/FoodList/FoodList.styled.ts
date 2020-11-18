@@ -4,6 +4,7 @@ import { Colors, Font, device } from '@/Styles';
 
 const StyledTitle = styled(Text)`
   color: ${Colors.SECONDARY_COLOR};
+  white-space: pre-wrap;
   letter-spacing: 1.1px;
   ${Font({ fontsize: 26, fontfamily: `Raleway`, fontweight: 600 })}
 
