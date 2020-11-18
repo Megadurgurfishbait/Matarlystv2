@@ -60,7 +60,7 @@ const BlackBg = styled.div`
 const ImageFloat = styled.div`
   width: ${ImageSize}; /* Need a specific value to work */
   height: ${ImageSize};
-  animation: ${float} ${time} infinite ease-in-out, ${fade} 4s infinite;
+  animation: ${float} ${time} infinite ease-in-out;
   z-index: 5;
 `;
 
@@ -82,7 +82,7 @@ const Image = styled.img<{
 `;
 
 const ImageRotate = styled.img<Props>`
-  animation: ${Rotate} ${time} infinite linear, ${fade} 4s infinite;
+  animation: ${Rotate} ${time} infinite linear;
   z-index: ${props => props.zIndex};
   width: ${ImageSize}; /* Need a specific value to work */
   height: ${ImageSize};
