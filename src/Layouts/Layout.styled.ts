@@ -24,8 +24,12 @@ const StyledGrid = styled(Grid)`
 
   @media ${device.large} {
     align-items: center;
-    grid-template-areas: '. textGrid textGrid .';
+    grid-template-areas: '. textGrid photoGrid .';
     justify-content: center;
+  }
+
+  @media ${device.tablet} {
+    grid-template-areas: '. textGrid textGrid .';
   }
 `;
 

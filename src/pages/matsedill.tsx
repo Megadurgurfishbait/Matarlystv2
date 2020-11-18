@@ -37,7 +37,7 @@ const Menu: React.FC<{}> = () => {
         </>
       ) : (
         <Layout
-          PhotoContainer={phoneSize && <Carousel seconds={8} images={images} />}
+          PhotoContainer={<Carousel seconds={8} images={images} />}
           TextContainer={<MenuTab Matsedill={FakeData.matsedill} />}
         />
       )}

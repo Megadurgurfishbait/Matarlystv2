@@ -11,7 +11,6 @@ const StyledCarousel = styled(Carousel)`
 const StyledImage = styled(Image)`
   height: 100%;
   width: 100%;
-  object-fit: cover;
 
   @media ${device.largePhone} {
     object-fit: cover;
