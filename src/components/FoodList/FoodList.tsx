@@ -22,7 +22,7 @@ export const FoodListItem = (items: Food): JSX.Element => (
       <FL.StyledTitle>{items.title}</FL.StyledTitle>
     </FL.Box>
     <FL.Box gridArea="Food">
-      <FL.StyledDescription>{items.foodDescription}</FL.StyledDescription>
+      <FL.StyledDescription>{items.Ingred}</FL.StyledDescription>
     </FL.Box>
     <FL.Box gridArea="Price">
       <FL.StyledPrice>{items.price}</FL.StyledPrice>

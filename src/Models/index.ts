@@ -1,7 +1,8 @@
 export interface Food {
   title: string;
-  foodDescription: string;
-  price: string;
+  Ingred?: string;
+  price?: string;
+  numero?: string;
 }
 
 export interface CarouselProps {
@@ -17,4 +18,8 @@ export interface LayoutProps {
 
 export interface FoodListProps {
   List: Food[];
+}
+
+export interface Matsedill {
+  [key: string]: Food[];
 }

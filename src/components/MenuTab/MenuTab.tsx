@@ -1,22 +1,18 @@
 import React from 'react';
-import { Food } from '@/Models/';
+import { Matsedill as M } from '@/Models/';
 import { FoodList } from '@/components';
 
 // Harry Styles
 import * as MT from './MenuTab.styled';
 
-export const MenuTab: React.FC<{ Matsedill: Food[]; Matsedill2: Food[] }> = ({
-  Matsedill,
-  Matsedill2,
-}) => (
+export const MenuTab: React.FC<{ Matsedill: M }> = ({ Matsedill }) => (
   <MT.Container>
     <MT.Tabs>
-      <MT.StyledTab title="Smáréttir">
-        <FoodList List={Matsedill} />
-      </MT.StyledTab>
-      <MT.StyledTab title="Rúgbrauð">
-        <FoodList List={Matsedill2} />
-      </MT.StyledTab>
+      {Object.keys(Matsedill).map(v => (
+        <MT.StyledTab title={`${v}`}>
+          <FoodList List={Matsedill[`${v}`]} />
+        </MT.StyledTab>
+      ))}
     </MT.Tabs>
   </MT.Container>
 );

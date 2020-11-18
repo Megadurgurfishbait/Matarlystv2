@@ -8,7 +8,8 @@ import { Layout } from '@/Layouts';
 //  Harry Styles
 import { GlobalStyle } from '@/Styles';
 
-import * as FakeData from '@/FakeData';
+import * as FakeData from '@/db.json';
+import { images } from '@/FakeData';
 import { useMediaQuery } from 'react-responsive';
 
 const Menu: React.FC<{}> = () => {
@@ -36,15 +37,8 @@ const Menu: React.FC<{}> = () => {
         </>
       ) : (
         <Layout
-          PhotoContainer={
-            phoneSize && <Carousel seconds={8} images={FakeData.images} />
-          }
-          TextContainer={
-            <MenuTab
-              Matsedill={FakeData.Matsedill}
-              Matsedill2={FakeData.Matsedill2}
-            />
-          }
+          PhotoContainer={phoneSize && <Carousel seconds={8} images={images} />}
+          TextContainer={<MenuTab Matsedill={FakeData.matsedill} />}
         />
       )}
     </Box>

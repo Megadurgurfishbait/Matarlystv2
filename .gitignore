@@ -21,7 +21,6 @@
 .prettierrc
 .eslintrc
 .commitlintrc.json
-.babel.rc
 LICENSE.md
 
 # debug

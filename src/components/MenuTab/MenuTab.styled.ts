@@ -3,21 +3,16 @@ import { Box, Tabs, Tab } from 'grommet';
 import styled from 'styled-components';
 import { Colors, device } from '@/Styles';
 
-const StyledBox = styled(Box)`
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: ${Colors.MAIN_COLOR};
-
-  @media ${device.largePhone} {
-    height: max-content;
-    align-items: flex-end;
-  }
-`;
-
 const StyledTab = styled(Tab)`
   margin-bottom: 100px;
+
+  & * span {
+    font-size: 14px;
+  }
+
+  & > div {
+    margin: 0px 6px;
+  }
 
   &:active,
   &[aria-expanded='true'],
@@ -35,4 +30,4 @@ const Container = styled(Box)`
   }
 `;
 
-export { StyledBox, Box, Tabs, StyledTab, Container };
+export { Box, Tabs, StyledTab, Container };
