@@ -1,6 +1,6 @@
 import React from 'react';
+import Fade from 'react-reveal';
 import { Food, Type } from '@/Models/';
-
 // Harry Styles
 import * as FL from './FoodList.styled';
 
@@ -19,17 +19,23 @@ const FoodListItem = (items: Food): JSX.Element => (
     key={items.title}
   >
     <FL.Box gridArea="Title">
-      {items.numero ? (
-        <FL.StyledTitle>{`${`${items.numero}. ${items.title}`}`}</FL.StyledTitle>
-      ) : (
-        <FL.StyledTitle>{items.title}</FL.StyledTitle>
-      )}
+      <Fade>
+        {items.numero ? (
+          <FL.StyledTitle>{`${`${items.numero}. ${items.title}`}`}</FL.StyledTitle>
+        ) : (
+          <FL.StyledTitle>{items.title}</FL.StyledTitle>
+        )}
+      </Fade>
     </FL.Box>
     <FL.Box gridArea="Food">
-      <FL.StyledDescription>{items.Ingred}</FL.StyledDescription>
+      <Fade>
+        <FL.StyledDescription>{items.Ingred}</FL.StyledDescription>
+      </Fade>
     </FL.Box>
     <FL.Box gridArea="Price">
-      <FL.StyledPrice>{items.price}</FL.StyledPrice>
+      <Fade>
+        <FL.StyledPrice>{items.price}</FL.StyledPrice>
+      </Fade>
     </FL.Box>
   </FL.StyledGrid>
 );
