@@ -1,5 +1,5 @@
 import React from 'react';
-import { FoodListProps, Food } from '@/Models/';
+import { Food, Type } from '@/Models/';
 
 // Harry Styles
 import * as FL from './FoodList.styled';
@@ -10,7 +10,7 @@ const GridArea = [
   { name: `Price`, start: [1, 0], end: [1, 1] },
 ];
 
-export const FoodListItem = (items: Food): JSX.Element => (
+const FoodListItem = (items: Food): JSX.Element => (
   <FL.StyledGrid
     fill
     rows={[`25px`, `50px`]}
@@ -34,8 +34,8 @@ export const FoodListItem = (items: Food): JSX.Element => (
   </FL.StyledGrid>
 );
 
-export const FoodList: React.FC<FoodListProps> = ({ List }) => (
+export const FoodList: React.FC<{ List: Type }> = ({ List }) => (
   <FL.StyledBox pad={{ horizontal: `50px` }}>
-    {List.map(items => FoodListItem(items))}
+    {(List as Food[]).map(items => FoodListItem(items))}
   </FL.StyledBox>
 );
