@@ -1,6 +1,6 @@
 import React from 'react';
 import * as FakeData from '@/db.json';
-import { FoodList } from '../FoodList';
+import { FoodList } from '@/components/Shared';
 import * as MFP from './MenuForPhones.styled';
 
 enum Rettir {

@@ -140,5 +140,163 @@
         "price": "990kr"
       }
     ]
+  },
+  "drykkir" : {
+    "Kaffi og Te": [
+      {
+        "title": "Americano",
+        "price": "550kr"
+      },
+      {
+        "title": "Cappuccino",
+        "price": "650kr"
+      },
+      {
+        "title": "Latte",
+        "price": "650kr"
+      },
+      {
+        "title": "Espresso",
+        "price": "550kr"
+      },
+      {
+        "title": "Swiss Mokka",
+        "price": "600kr"
+      },
+      {
+        "title": "Íslatte",
+        "price": "750kr"
+      },
+      {
+        "title": "Auka kaffiskot",
+        "price": "200kr"
+      },
+      {
+        "title": "Sírópsskot",
+        "price": "200kr"
+      },
+      {
+        "title": "Jurtate",
+        "price": "650kr"
+      },
+      {
+        "title": "Freyðite Óáfengt",
+        "price": "1200kr",
+        "price2": "3900kr"
+      }
+    ],
+    "Óáfengir drykkir": [
+      {
+        "title": "Gos",
+        "price": "400kr"
+      },
+      {
+        "title": "Malt",
+        "price": "690kr"
+      },
+      {
+        "title": "Pilsner",
+        "price": "690kr"
+      },
+      {
+        "title": "Fever Tree Tonic",
+        "price": "690kr"
+      },
+      {
+        "title": "Svali",
+        "price": "300kr"
+      }
+    ],
+    "Bjór": [
+      {
+        "title": "Boli á Krana",
+        "price": "990kr",
+        "price2": "1200kr"
+      }
+    ],
+    "Flöskubjór": [
+      {
+        "title": "Lite",
+        "price": "1390kr"
+      },
+      {
+        "title": "Classic",
+        "price": "1290kr"
+      },
+      {
+        "title": "Úlfur",
+        "price": "1200kr"
+      },
+      {
+        "title": "Snorri",
+        "price": "1590kr"
+      },
+      {
+        "title": "Carlsberg",
+        "price": "1290kr"
+      }
+    ],
+    "Freyðandi Drykkir": [
+      {
+        "title": "Somersby Spritz",
+        "price": "1590kr"
+      },
+      {
+        "title": "Freyðite 5%",
+        "price": "1390kr",
+        "price2": "5990kr"
+      },
+      {
+        "title": "Piccini Prosecco",
+        "price": "1390kr",
+        "price2": "5990kr"
+      }
+    ],
+    "Hvítvín": [
+      {
+        "title": "Gato Negro",
+        "price": "1490kr",
+        "price2": "5990kr"
+      },
+      {
+        "title": "Giancondi Chardonnay",
+        "price": "1490kr",
+        "price2": "5990kr"
+      },
+      {
+        "title": "Bio Catarrato Chardonnay",
+        "price": "1690kr",
+        "price2": "6990kr"
+      },
+      {
+        "title": "Rosemount GTR",
+        "price": "1590kr",
+        "price2": "6100kr"
+      }
+    ],
+    "Rósavín": [
+      {
+        "title": "Beringer Zinfandel Rosé",
+        "price": "1590kr",
+        "price2": "6100kr"
+      }
+    ],
+    "Rauðvín": [
+      {
+        "title": "Gato Negro",
+        "price": "1490kr",
+        "price2": "5990kr"
+      },
+      {
+        "title": "Giancondi Sangioveso",
+        "price": "1490kr",
+        "price2": "5990kr"
+      },
+      {
+        "title": "Piccini Chianti",
+        "price": "1490kr",
+        "price2": "5990kr"
+      }
+    ]
   }
 }

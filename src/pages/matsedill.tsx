@@ -1,9 +1,9 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { Box } from 'grommet';
 
 // Components
 import { Carousel, Header, MenuTab, MenuForPhones } from '@/components';
-import { Box } from 'grommet';
 import { Layout } from '@/Layouts';
 
 //  Harry Styles
@@ -38,7 +38,7 @@ const Menu: React.FC<{}> = () => {
       ) : (
         <Layout
           PhotoContainer={<Carousel seconds={8} images={images} />}
-          TextContainer={<MenuTab Matsedill={FakeData.matsedill} />}
+          TextContainer={<MenuTab MapType="Matur" Map={FakeData.matsedill} />}
         />
       )}
     </Box>

@@ -1,16 +1,21 @@
 import React from 'react';
-import { Matsedill as M } from '@/Models/';
-import { FoodList } from '@/components';
+import { DrinkList, FoodList } from '@/components/Shared';
+
+import { MenuTabProps } from '@/Models/';
 
 // Harry Styles
 import * as MT from './MenuTab.styled';
 
-export const MenuTab: React.FC<{ Matsedill: M }> = ({ Matsedill }) => (
+export const MenuTab: React.FC<MenuTabProps> = ({ Map, MapType }) => (
   <MT.Container>
     <MT.StyledTabs>
-      {Object.keys(Matsedill).map(v => (
+      {Object.keys(Map).map(v => (
         <MT.StyledTab title={`${v}`}>
-          <FoodList List={Matsedill[`${v}`]} />
+          {MapType === `Drykkir` ? (
+            <DrinkList List={Map[`${v}`]} />
+          ) : (
+            <FoodList List={Map[`${v}`]} />
+          )}
         </MT.StyledTab>
       ))}
     </MT.StyledTabs>

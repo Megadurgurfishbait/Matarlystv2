@@ -38,7 +38,7 @@ const StyledDescription = styled(Text)`
 const StyledPrice = styled(Text)`
   font-family: 'roboto';
   color: ${Colors.THIRD_COLOR};
-
+  align-self: flex-end;
   @media ${device.largePhone} {
     font-size: 12px;
     align-self: flex-end;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Box, Grommet } from 'grommet';
+import { Box, Grommet } from 'grommet/';
 import { Footer, Header } from '@/components';
 
 // Harry Styles

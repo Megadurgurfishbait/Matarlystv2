@@ -5,6 +5,12 @@ export interface Food {
   numero?: string;
 }
 
+export interface Drink {
+  title: string;
+  price?: string;
+  price2?: string;
+}
+
 export interface CarouselProps {
   images: string[];
   seconds: number;
@@ -16,10 +22,13 @@ export interface LayoutProps {
   TextContainer?: JSX.Element;
 }
 
-export interface FoodListProps {
-  List: Food[];
+export interface Map {
+  [key: string]: Food[] | Drink[];
 }
 
-export interface Matsedill {
-  [key: string]: Food[];
+export type Type = Food[] | Drink[];
+
+export interface MenuTabProps {
+  Map: Map;
+  MapType: 'Drykkir' | 'Matur';
 }
