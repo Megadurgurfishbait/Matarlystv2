@@ -1,6 +1,6 @@
 import { Text, Box, Image } from 'grommet';
 import Link from 'next/link';
-import { slide as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu/';
 import styled from 'styled-components';
 
 // Styles

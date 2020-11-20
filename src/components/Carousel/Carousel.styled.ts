@@ -1,5 +1,6 @@
-import { Carousel, Image } from 'grommet';
+import { Carousel } from 'grommet';
 import styled from 'styled-components';
+import Image from 'next/image';
 import { device } from '@/Styles';
 
 const StyledCarousel = styled(Carousel)`

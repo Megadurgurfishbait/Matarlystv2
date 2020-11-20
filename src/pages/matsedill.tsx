@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 // Components
 import { Carousel, Header, MenuTab, MenuForPhones } from '@/components';
@@ -10,7 +11,6 @@ import { GlobalStyle } from '@/Styles';
 
 import * as FakeData from '@/db.json';
 import { images } from '@/FakeData';
-import { useMediaQuery } from 'react-responsive';
 
 const Menu: React.FC<{}> = () => {
   const [showPhone, setShowPhone] = React.useState<boolean>(false);
