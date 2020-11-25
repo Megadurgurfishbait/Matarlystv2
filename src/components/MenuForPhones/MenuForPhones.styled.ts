@@ -8,7 +8,8 @@ const List = styled.ul`
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  padding: 0px;
+
+  padding: 40px;
   list-style: none;
   color: ${Colors.SECONDARY_COLOR};
 `;
@@ -24,16 +25,72 @@ const StyledLayer = styled(Layer)`
   align-items: center;
   justify-content: center;
   min-height: 100%;
+  z-index: 50000000;
 `;
 
 const StyledButton = styled(Button)`
-  border: none;
   color: ${Colors.SECONDARY_COLOR};
   box-shadow: none;
+  margin-top: 15px;
+  width: max-content;
+  background-color: ${Colors.MAIN_COLOR};
+  border: 1px solid ${Colors.SECONDARY_COLOR};
+
   &:hover,
-  &:active {
+  &:focus {
     box-shadow: none;
   }
 `;
 
-export { List, StyledLayer, StyledBox, StyledButton };
+const StyledTitle = styled.h3`
+  color: ${Colors.SECONDARY_COLOR};
+`;
+
+const StyledContainer = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const StyledRow = styled.ul`
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  padding: 0px;
+  justify-content: space-between;
+  margin-top: 0px;
+`;
+const StyledItemTitle = styled.h4`
+  margin: 0px;
+  color: ${Colors.SECONDARY_COLOR};
+  opacity: 0.85;
+  font-weight: 100;
+  padding-right: 10px;
+`;
+
+const StyledItemIngred = styled.p`
+  margin: 0px;
+  font-size: 12px;
+  line-height: 14px;
+  color: ${Colors.THIRD_COLOR};
+  opacity: 0.7;
+`;
+
+const StyledColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export {
+  List,
+  StyledLayer,
+  StyledBox,
+  StyledButton,
+  StyledTitle,
+  StyledRow,
+  StyledContainer,
+  StyledItemTitle,
+  StyledItemIngred,
+  StyledColumn,
+};

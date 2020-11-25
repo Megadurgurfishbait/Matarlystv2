@@ -46,15 +46,26 @@ export const MenuForPhones: React.FC<{}> = () => {
   );
 
   const Menu = ({ type }: { type: string }): JSX.Element => (
-    <>
-      <h1> {type} </h1>
+    <MFP.StyledContainer>
+      <MFP.StyledTitle> {type} </MFP.StyledTitle>
       {(getDrinkOrFood()[type] as []).map((v: Type) => (
-        <MFP.List>
-          <li>{v.title}</li>
-          <li>{v.price}</li>
-        </MFP.List>
+        <>
+          <MFP.StyledRow>
+            <MFP.StyledColumn>
+              {v.numero ? (
+                <MFP.StyledItemTitle>{`${`${v.numero}. ${v.title}`}`}</MFP.StyledItemTitle>
+              ) : (
+                <MFP.StyledItemTitle>{v.title}</MFP.StyledItemTitle>
+              )}
+              <MFP.StyledItemIngred>{v.Ingred}</MFP.StyledItemIngred>
+            </MFP.StyledColumn>
+            <MFP.StyledColumn>
+              <MFP.StyledItemTitle>{v.price}</MFP.StyledItemTitle>
+            </MFP.StyledColumn>
+          </MFP.StyledRow>
+        </>
       ))}
-    </>
+    </MFP.StyledContainer>
   );
 
   return (
