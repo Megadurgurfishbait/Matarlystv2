@@ -1,6 +1,6 @@
 import { Text, Box, Image } from 'grommet';
 import Link from 'next/link';
-import { slide as Menu } from 'react-burger-menu/';
+import Slide from 'react-burger-menu/lib/menus/slide';
 import styled from 'styled-components';
 
 // Styles
@@ -9,7 +9,7 @@ import { device } from '@/Styles/BP';
 
 const StyledLink = styled(Link)``;
 const StyledSpan = styled.span`
-  background-color: #ad6945;
+  background-color: ${Colors.SECONDARY_COLOR_DARKER};
   padding: 5px;
   margin: 5px 0px;
 
@@ -81,6 +81,24 @@ const StyledBoxOuter = styled(Box)`
   }
 `;
 
+const BottomRow = styled.div`
+  display: flex;
+
+  & * svg {
+    margin: 0px 10px 10px 10px;
+  }
+`;
+
+const Links = styled.div`
+  display: flex;
+  flex-direction: column;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
 const StyledBurgerMenu = {
   bmBurgerButton: {
     position: `fixed`,
@@ -105,6 +123,7 @@ const StyledBurgerMenu = {
   },
   bmMenuWrap: {
     position: `fixed`,
+    height: `calc(100% - 50px)`,
   },
   bmMenu: {
     background: `${Colors.MAIN_COLOR}`,
@@ -117,10 +136,10 @@ const StyledBurgerMenu = {
     fill: `${Colors.MAIN_COLOR}`,
   },
   bmItemList: {
-    padding: `0.8em`,
     display: `flex`,
     flexDirection: `column`,
     alignItems: `center`,
+    justifyContent: `space-between`,
   },
   bmItem: {
     display: `flex`,
@@ -140,5 +159,7 @@ export {
   StyledLink,
   StyledImage,
   StyledSpan,
-  Menu,
+  Slide,
+  BottomRow,
+  Links,
 };

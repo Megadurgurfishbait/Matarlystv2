@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Box } from 'grommet';
 
 // Components
-import { Carousel, Header, MenuTab, MenuForPhones } from '@/components';
+import { Carousel, Header, MenuTab, MenuForPhones, Footer } from '@/components';
 import { Layout } from '@/Layouts';
 
 //  Harry Styles
@@ -34,6 +34,7 @@ const Menu: React.FC<{}> = () => {
         <>
           <Header />
           <MenuForPhones />
+          <Footer />
         </>
       ) : (
         <Layout
