@@ -5,4 +5,5 @@ export enum Routes {
   Instagram = `https://www.instagram.com/matarlyst.cafe.bar.restaurant/`,
   Home = `/`,
   Upplysingar = `/upplysingar`,
+  Drykkjarsida = `drykkjarsida`,
 }

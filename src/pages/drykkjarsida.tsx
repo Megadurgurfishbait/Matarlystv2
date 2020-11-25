@@ -1,6 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Carousel, Header, MenuForPhones, MenuTab } from '@/components';
+import { Carousel, Footer, Header, MenuForPhones, MenuTab } from '@/components';
 import * as FakeData from '@/db.json';
 import { Layout } from '@/Layouts';
 import { images } from '@/FakeData';
@@ -25,6 +25,7 @@ const Drykkjarsedill: React.FC<{}> = () => {
         <>
           <Header />
           <MenuForPhones />
+          <Footer />
         </>
       ) : (
         <Layout
