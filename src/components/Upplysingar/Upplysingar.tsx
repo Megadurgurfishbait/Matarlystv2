@@ -34,6 +34,10 @@ export const Upplysingar: React.FC<{}> = () => {
         <label>Opnunartími</label>
         <ul>
           <U.FlexDiv dir="row">
+            <li>Mánudagur</li>
+            <li>Lokað</li>
+          </U.FlexDiv>
+          <U.FlexDiv dir="row">
             <li>
               Þriðjudaga <U.SPAN>-</U.SPAN> Fimmtudags
             </li>
@@ -48,10 +52,6 @@ export const Upplysingar: React.FC<{}> = () => {
             <li>
               11:00 <U.SPAN>-</U.SPAN> 22:00
             </li>
-          </U.FlexDiv>
-          <U.FlexDiv dir="row">
-            <li>Mánudagur</li>
-            <li>Lokað</li>
           </U.FlexDiv>
         </ul>
         <label>Staðsetning</label>

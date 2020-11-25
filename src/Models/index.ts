@@ -26,7 +26,7 @@ export interface Map {
   [key: string]: Food[] | Drink[];
 }
 
-export type Type = Food[] | Drink[];
+export type Type = Food & Drink;
 
 export interface MenuTabProps {
   Map: Map;

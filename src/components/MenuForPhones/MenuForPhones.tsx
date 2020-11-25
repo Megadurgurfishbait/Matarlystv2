@@ -1,7 +1,8 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import * as FakeData from '@/db.json';
-import { Food } from '@/Models';
+
+import { Type } from '@/Models';
 import * as MFP from './MenuForPhones.styled';
 
 const Rettir = {
@@ -18,10 +19,9 @@ const Drykkir = {
   kaffi: `Kaffi og Te`,
   oafengt: `Óáfengir drykkir`,
   bjor: `Bjór`,
-  flosku: `Flöskubjór`,
   freydi: `Freyðandi Drykkir`,
   hvitvin: `Hvítvín`,
-  rosavin: `Rósavín`,
+  rosa: `Rósavín`,
   raudvin: `Rauðvín`,
 };
 
@@ -30,7 +30,7 @@ function getDrinkOrFood() {
   return useRouter().pathname === `/drykkjarsida` ? drykkir : matsedill;
 }
 
-export function MenuForPhones(): JSX.Element {
+export const MenuForPhones: React.FC<{}> = () => {
   const [show, setShow] = React.useState<boolean>();
   const [whatToShow, setWhatToShow] = React.useState<string | undefined>(
     undefined,
@@ -48,8 +48,11 @@ export function MenuForPhones(): JSX.Element {
   const Menu = ({ type }: { type: string }): JSX.Element => (
     <>
       <h1> {type} </h1>
-      {(getDrinkOrFood()[type] as Food[]).map((v: Food) => (
-        <li>{v.price}</li>
+      {(getDrinkOrFood()[type] as []).map((v: Type) => (
+        <MFP.List>
+          <li>{v.title}</li>
+          <li>{v.price}</li>
+        </MFP.List>
       ))}
     </>
   );
@@ -70,4 +73,4 @@ export function MenuForPhones(): JSX.Element {
       )}
     </MFP.StyledBox>
   );
-}
+};

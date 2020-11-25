@@ -209,12 +209,14 @@
     ],
     "Bjór": [
       {
-        "title": "Boli á Krana",
-        "price": "990kr",
-        "price2": "1200kr"
-      }
-    ],
-    "Flöskubjór": [
+        "title": "Stór Boli á krana",
+        "price": "1200kr"
+      },
+      {
+        "title": "Lítill Boli á krana",
+        "price": "990kr"
+      },
+
       {
         "title": "Lite",
         "price": "1390kr"
@@ -235,6 +237,7 @@
         "title": "Carlsberg",
         "price": "1290kr"
       }
+
     ],
     "Freyðandi Drykkir": [
       {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Fade from 'react-reveal';
-import { Drink, Type } from 'Models';
+import Fade from 'react-reveal/Fade';
+import { Drink } from 'Models';
 
 import * as D from './FoodList.styled';
 
@@ -9,7 +9,7 @@ const GridArea = [
   { name: `Price`, start: [1, 0], end: [1, 1] },
 ];
 
-const DrinkListItem = (items: Drink): JSX.Element => (
+const DrinkListItem: React.FC<{ items: Drink }> = ({ items }): JSX.Element => (
   <D.StyledGrid
     fill
     rows={[`25px`, `10px`]}
@@ -26,8 +26,10 @@ const DrinkListItem = (items: Drink): JSX.Element => (
   </D.StyledGrid>
 );
 
-export const DrinkList: React.FC<{ List: Type }> = ({ List }) => (
+export const DrinkList: React.FC<{ List: Drink[] }> = ({ List }) => (
   <D.StyledBox>
-    {(List as Drink[]).map(items => DrinkListItem(items))}
+    {List.map(i => (
+      <DrinkListItem items={i} />
+    ))}
   </D.StyledBox>
 );

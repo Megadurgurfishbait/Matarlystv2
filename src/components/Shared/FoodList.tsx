@@ -1,6 +1,6 @@
 import React from 'react';
-import Fade from 'react-reveal';
-import { Food, Type } from '@/Models/';
+import Fade from 'react-reveal/Fade';
+import { Food } from '@/Models/';
 // Harry Styles
 import * as FL from './FoodList.styled';
 
@@ -40,8 +40,8 @@ const FoodListItem = (items: Food): JSX.Element => (
   </FL.StyledGrid>
 );
 
-export const FoodList: React.FC<{ List: Type }> = ({ List }) => (
+export const FoodList: React.FC<{ List: Food[] }> = ({ List }) => (
   <FL.StyledBox pad={{ horizontal: `50px` }}>
-    {(List as Food[]).map(items => FoodListItem(items))}
+    {List.map(items => FoodListItem(items))}
   </FL.StyledBox>
 );
