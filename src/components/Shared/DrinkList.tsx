@@ -29,7 +29,7 @@ const DrinkListItem: React.FC<{ items: Drink }> = ({ items }): JSX.Element => (
 export const DrinkList: React.FC<{ List: Drink[] }> = ({ List }) => (
   <D.StyledBox>
     {List.map(i => (
-      <DrinkListItem items={i} />
+      <DrinkListItem items={i} key={i.title} />
     ))}
   </D.StyledBox>
 );

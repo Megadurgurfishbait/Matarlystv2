@@ -10,7 +10,7 @@ export const MenuTab: React.FC<MenuTabProps> = ({ Map, MapType }) => (
   <MT.Container>
     <MT.StyledTabs>
       {Object.keys(Map).map(v => (
-        <MT.StyledTab title={`${v}`}>
+        <MT.StyledTab key={v} title={`${v}`}>
           {MapType === `Drykkir` ? (
             <DrinkList List={Map[`${v}`] as Drink[]} />
           ) : (

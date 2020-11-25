@@ -10,7 +10,7 @@ const GridArea = [
   { name: `Price`, start: [1, 0], end: [1, 1] },
 ];
 
-const FoodListItem = (items: Food): JSX.Element => (
+const FoodListItem: React.FC<{ items: Food }> = ({ items }): JSX.Element => (
   <FL.StyledGrid
     fill
     rows={[`25px`, `50px`]}
@@ -42,6 +42,8 @@ const FoodListItem = (items: Food): JSX.Element => (
 
 export const FoodList: React.FC<{ List: Food[] }> = ({ List }) => (
   <FL.StyledBox pad={{ horizontal: `50px` }}>
-    {List.map(items => FoodListItem(items))}
+    {List.map(i => (
+      <FoodListItem items={i} />
+    ))}
   </FL.StyledBox>
 );

@@ -16,7 +16,7 @@ const ListItem: React.FC<{ href: string; name: string }> = ({
   href,
   name,
 }): JSX.Element => (
-  <H.StyledLink key={name} href={href}>
+  <H.StyledLink key={name} href={href} prefetch={false}>
     <H.StyledSpan>
       <H.StyledAnchor>{name}</H.StyledAnchor>
     </H.StyledSpan>
@@ -31,7 +31,7 @@ export const Header: React.FC<{}> = () => (
       </H.StyledLink>
       <H.Links>
         {HeaderList.map(li => (
-          <ListItem {...li} />
+          <ListItem key={li.name} {...li} />
         ))}
       </H.Links>
       <H.BottomRow>
