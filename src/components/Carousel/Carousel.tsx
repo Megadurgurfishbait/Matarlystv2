@@ -1,20 +1,25 @@
-/* eslint-disable @typescript-eslint/quotes */
+// /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
-import { CarouselProps } from '@/Models/';
-
-// Harry Styles
-import * as C from './Carousel.styled';
+import styled from 'styled-components';
+import Image from 'next/image';
+import Slider from 'infinite-react-carousel';
+import { Horizontal } from '@/Styles';
 
 // Virkar ekki að setja inn layout="fill".
 // Ekki spyrja mig
-const layoutFill = {
-  layout: 'fill',
-};
 
-export const Carousel: React.FC<CarouselProps> = ({ images, seconds }) => (
-  <C.StyledCarousel fill controls={false} play={seconds * 1000}>
+export const Carousel: React.FC<{ images: string[] }> = ({ images }) => (
+  <StyledCarousel fill controls={false} play={8000}>
     {images.map(v => (
-      <C.StyledImage {...layoutFill} src={v} key={v} />
+      <Horizontal>
+        <Image layout="fill" src={v} key={v} />
+      </Horizontal>
     ))}
-  </C.StyledCarousel>
+  </StyledCarousel>
 );
+
+const StyledCarousel = styled(Slider)`
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+`;

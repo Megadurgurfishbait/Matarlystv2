@@ -1,22 +1,19 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Box } from 'grommet';
-
-// Components
-import { Carousel, Header, MenuTab, MenuForPhones, Footer } from '@/components';
-import { Layout } from '@/Layouts';
-
-//  Harry Styles
-import { GlobalStyle } from '@/Styles';
-
 import * as FakeData from '@/db.json';
 import { images } from '@/FakeData';
 
+// Components
+import { MenuTab, MenuForPhones } from '@/components';
+import { Layout } from '@/Layouts';
+
+//  Harry Styles
+
 const Menu: React.FC<{}> = () => {
-  const [showPhone, setShowPhone] = React.useState<boolean>(false);
+  const [ShowDesktop, setShowDesktop] = React.useState<boolean>(true);
 
   const phoneSize = useMediaQuery({
-    query: `(max-device-width: 600px)`,
+    query: `(max-device-width: 800px)`,
   });
 
   // Nauðsynlegt, ef að það er refreshað á /Matsedil í síma kemur layout inn.
@@ -24,25 +21,21 @@ const Menu: React.FC<{}> = () => {
   // og runnar Layout Kóðan alltaf fyrst
   React.useEffect(() => {
     if (phoneSize) {
-      setShowPhone(true);
+      setShowDesktop(false);
     }
-  }, [showPhone]);
+  }, [ShowDesktop]);
   return (
-    <Box fill="vertical">
-      <GlobalStyle />
-      {showPhone ? (
+    <>
+      {!ShowDesktop ? (
         <>
-          <Header />
           <MenuForPhones />
-          <Footer />
         </>
       ) : (
-        <Layout
-          PhotoContainer={<Carousel seconds={8} images={images} />}
-          TextContainer={<MenuTab MapType="Matur" Map={FakeData.matsedill} />}
-        />
+        <Layout images={images}>
+          <MenuTab isFood Map={FakeData.matsedill} />
+        </Layout>
       )}
-    </Box>
+    </>
   );
 };
 

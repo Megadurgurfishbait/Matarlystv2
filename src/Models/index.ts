@@ -13,13 +13,13 @@ export interface Drink {
 
 export interface CarouselProps {
   images: string[];
-  seconds: number;
+  seconds?: number;
   fill?: boolean;
 }
 
 export interface LayoutProps {
-  PhotoContainer?: JSX.Element;
-  TextContainer?: JSX.Element;
+  images: object;
+  TextContainer?: React.ReactChildren;
 }
 
 export interface Map {
@@ -30,5 +30,5 @@ export type Type = Food & Drink;
 
 export interface MenuTabProps {
   Map: Map;
-  MapType: 'Drykkir' | 'Matur';
+  isFood: boolean;
 }

@@ -1,10 +1,29 @@
 /* eslint-disable dot-notation */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+
 import getConfig from 'next/config';
+import dynamic from 'next/dynamic';
 import React from 'react';
-import ReactMapGL, { Marker } from 'react-map-gl';
 
 import * as U from './Upplysingar.styled';
+
+const ReactMapGL = dynamic(() => import(`react-map-gl`), {
+  ssr: false,
+});
+
+const Marker = dynamic(
+  () => import(`react-map-gl`).then(module => module.Marker),
+  {
+    ssr: false,
+  },
+);
+
+const location = {
+  latitude: 63.9373,
+  longitude: -20.992,
+  offsetLeft: -20,
+  offsetTop: -20,
+};
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -69,12 +88,7 @@ export const Upplysingar: React.FC<{}> = () => {
           onViewportChange={nextViewport => setViewport(nextViewport)}
           className="MAP"
         >
-          <Marker
-            latitude={63.9373}
-            longitude={-20.992}
-            offsetLeft={-20}
-            offsetTop={-20}
-          >
+          <Marker {...location}>
             <U.Location color={U.LocationIconColor} size="medium" />
           </Marker>
         </ReactMapGL>
