@@ -3,7 +3,7 @@
 import React from 'react';
 import config from 'react-reveal/globals';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import 'infinite-react-carousel/lib/carousel/style.css';
+import 'react-alice-carousel/lib/alice-carousel.css';
 import { GlobalStyle } from '../Styles';
 import { Header, Footer } from '../components';
 
