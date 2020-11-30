@@ -2,8 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
-import Slider from 'infinite-react-carousel';
-import { Horizontal } from '@/Styles';
+import { Carousel as C } from 'grommet';
 
 // Virkar ekki að setja inn layout="fill".
 // Ekki spyrja mig
@@ -11,14 +10,12 @@ import { Horizontal } from '@/Styles';
 export const Carousel: React.FC<{ images: string[] }> = ({ images }) => (
   <StyledCarousel fill controls={false} play={8000}>
     {images.map(v => (
-      <Horizontal>
-        <Image layout="fill" src={v} key={v} />
-      </Horizontal>
+      <Image layout="fill" src={v} key={v} />
     ))}
   </StyledCarousel>
 );
 
-const StyledCarousel = styled(Slider)`
+const StyledCarousel = styled(C)`
   height: 100%;
   width: 100%;
   overflow: hidden;
