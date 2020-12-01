@@ -36,4 +36,9 @@ const MyDiv = styled.div`
   width: 100%;
   object-fit: cover;
   display: flex;
+
+  & > div {
+    height: 100%;
+    width: 100%;
+  }
 `;

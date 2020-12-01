@@ -3,7 +3,7 @@ import React from 'react';
 import { Routes } from '@/Routes';
 
 // Harry Styles
-import { Colors } from '@/Styles';
+
 import * as H from './Header.styled';
 
 const HeaderList = [
