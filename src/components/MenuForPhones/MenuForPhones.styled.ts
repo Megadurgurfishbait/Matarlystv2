@@ -1,6 +1,6 @@
 /* eslint-disable object-curly-newline */
 import { Colors, Font, Vertical } from '@/Styles';
-import dynamic from 'next/dynamic';
+
 import styled from 'styled-components';
 
 const List = styled.ul`
@@ -19,9 +19,8 @@ const StyledBox = styled(Vertical)`
 `;
 
 const StyledLayer = styled.div`
-  position: absolute;
-
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
   justify-content: center;

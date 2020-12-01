@@ -2,17 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
+
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel as C } from 'react-responsive-carousel';
-
-// eslint-disable-next-line @typescript-eslint/quotes
-// const C = dynamic(
-//   () => import(`grommet/components/Carousel`).then(module => module.Carousel),
-//   {
-//     ssr: false,
-//   },
-// );
 
 export const Carousel: React.FC<{ images: string[] }> = ({ images }) => (
   <StyledCarousel
