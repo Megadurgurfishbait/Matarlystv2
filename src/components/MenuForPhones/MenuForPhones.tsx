@@ -79,7 +79,14 @@ export const MenuForPhones: React.FC<{}> = () => {
       )}
 
       {show && (
-        <MFP.StyledLayer style={{ backgroundColor: `#231F1E` }}>
+        <MFP.StyledLayer
+          animation="fadeIn"
+          style={{
+            backgroundColor: `#231F1E`,
+            minHeight: `100vh`,
+            minWidth: `100vw`,
+          }}
+        >
           <Menu type={whatToShow} />
           <MFP.StyledButton onClick={() => setShow(false)}>
             Tilbaka

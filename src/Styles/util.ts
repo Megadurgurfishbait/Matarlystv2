@@ -1,7 +1,7 @@
 interface Font {
   fontsize?: number;
   fontweight?: number;
-  fontfamily?: 'Roboto' | 'Segoe UI' | 'Raleway' | 'Roboto Mono';
+  fontfamily?: 'Roboto' | 'Segoe UI' | 'Raleway';
   letterspacing?: number;
 }
 

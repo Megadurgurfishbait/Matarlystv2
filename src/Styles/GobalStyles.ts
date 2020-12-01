@@ -14,8 +14,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const LayoutPadding = `padding: 0px 200px`;
-
 export const Vertical = styled.div`
   display: flex;
   height: 100%;

@@ -2,10 +2,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
-import { Carousel as C } from 'grommet';
+import dynamic from 'next/dynamic';
 
-// Virkar ekki að setja inn layout="fill".
-// Ekki spyrja mig
+// eslint-disable-next-line @typescript-eslint/quotes
+const C = dynamic(
+  () => import(`grommet/components/Carousel`).then(module => module.Carousel),
+  {
+    ssr: false,
+  },
+);
 
 export const Carousel: React.FC<{ images: string[] }> = ({ images }) => (
   <StyledCarousel fill controls={false} play={8000}>

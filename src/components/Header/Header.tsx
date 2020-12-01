@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram } from 'grommet-icons';
+
 import { Routes } from '@/Routes';
 
 // Harry Styles
@@ -27,14 +27,23 @@ export const Header: React.FC<{}> = () => (
   <H.StyledBoxOuter>
     <H.Slide styles={H.StyledBurgerMenu}>
       <H.StyledLink href="/" prefetch={false}>
-        <H.StyledImage height="200px" width="200px" src="/logo.png" />
+        <H.StyledImage height={200} width={200} src="/logo.png" />
       </H.StyledLink>
       <H.Links>
         {HeaderList.map(li => (
           <ListItem key={li.name} {...li} />
         ))}
       </H.Links>
-      <H.BottomRow>
+      <H.BottomRow />
+    </H.Slide>
+
+    <H.StyledBoxInner>
+      <H.StyledText>Matarlyst</H.StyledText>
+    </H.StyledBoxInner>
+  </H.StyledBoxOuter>
+);
+
+/*
         <H.StyledAnchor href={`${Routes.Facebook}`}>
           <Facebook color={`${Colors.SECONDARY_COLOR_DARKER}`} />
         </H.StyledAnchor>
@@ -44,11 +53,4 @@ export const Header: React.FC<{}> = () => (
             style={{ borderRadius: `5px` }}
           />
         </H.StyledAnchor>
-      </H.BottomRow>
-    </H.Slide>
-
-    <H.StyledBoxInner>
-      <H.StyledText>Matarlyst</H.StyledText>
-    </H.StyledBoxInner>
-  </H.StyledBoxOuter>
-);
+        */

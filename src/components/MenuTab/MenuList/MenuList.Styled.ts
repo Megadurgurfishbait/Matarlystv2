@@ -36,7 +36,7 @@ const TitleContainer = styled(Horizontal)`
   line-height: 20px;
   white-space: pre-wrap;
   letter-spacing: 1.1px;
-  ${Font({ fontsize: 26, fontfamily: `Raleway`, fontweight: 600 })}
+  ${Font({ fontsize: 26, fontfamily: `Raleway` })}
 
   @media ${device.large} {
     font-size: 22px;

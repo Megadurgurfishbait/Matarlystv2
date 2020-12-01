@@ -4,12 +4,10 @@
 import React from 'react';
 
 import { Layout } from '@/Layouts';
-import { Upplysingar as Info } from '@/components';
-
-import { images } from '../FakeData';
+import { Info } from '@/components';
 
 const Upplysingar: React.FC = () => (
-  <Layout images={images}>
+  <Layout images={[`/Restaurant2.jpg`, `/haed-matur.jpg`]}>
     <Info />
   </Layout>
 );

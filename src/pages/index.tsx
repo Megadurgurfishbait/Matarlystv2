@@ -1,10 +1,10 @@
 import React from 'react';
 // Components
 
-import { Horizontal } from '@/Styles';
-import { Carousel } from '@/components/Carousel/Carousel';
+import { Horizontal } from '../Styles';
+import { Carousel } from '../components/Carousel/Carousel';
 
-const { HomeImages } = require(`@/FakeData`);
+import { HomeImages } from '../FakeData';
 // eslint-disable-next-line import/no-extraneous-dependencies
 
 const Home: React.FC<{}> = () => (

@@ -1,38 +1,23 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
-import * as FakeData from '@/db.json';
+import { matsedill } from '@/db.json';
 import { images } from '@/FakeData';
-
+import { ShowDesktopContext } from '@/Context/ShowDesktop';
 // Components
-import { MenuTab, MenuForPhones } from '@/components';
-import { Layout } from '@/Layouts';
+import { Layout } from '@/Layouts/Layout';
+import { MenuTab } from '../components/MenuTab/MenuTab';
+import { MenuForPhones } from '../components/MenuForPhones/MenuForPhones';
 
 //  Harry Styles
 
 const Menu: React.FC<{}> = () => {
-  const [ShowDesktop, setShowDesktop] = React.useState<boolean>(true);
-
-  const phoneSize = useMediaQuery({
-    query: `(max-device-width: 800px)`,
-  });
-
-  // Nauðsynlegt, ef að það er refreshað á /Matsedil í síma kemur layout inn.
-  // Svona komumst við hjá því að render'a það því NextJS er serverside renderað fyrst
-  // og runnar Layout Kóðan alltaf fyrst
-  React.useEffect(() => {
-    if (phoneSize) {
-      setShowDesktop(false);
-    }
-  }, [ShowDesktop]);
+  const { isPhone } = React.useContext(ShowDesktopContext);
   return (
     <>
-      {!ShowDesktop ? (
-        <>
-          <MenuForPhones />
-        </>
+      {isPhone ? (
+        <MenuForPhones />
       ) : (
         <Layout images={images}>
-          <MenuTab isFood Map={FakeData.matsedill} />
+          <MenuTab isFood Map={matsedill} />
         </Layout>
       )}
     </>

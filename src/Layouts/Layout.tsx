@@ -3,21 +3,31 @@ import React from 'react';
 // Components
 import { Footer, Header } from '@/components';
 
+import { ShowDesktopContext } from '@/Context/ShowDesktop';
 import { Carousel } from '../components/Carousel/Carousel';
 
 // Harry Styles
 import * as L from './Layout.styled';
 
-export const Layout: React.FC<{ images?: string[] }> = ({
+export const Layout: React.FC<{ images?: string[] | undefined }> = ({
   images,
   children,
-}) => (
-  <L.Vertical>
-    <Header />
-    <L.Horizontal>
-      {children && <L.StyledBox>{children}</L.StyledBox>}
-      <L.StyledBox>{images && <Carousel images={images} />}</L.StyledBox>
-    </L.Horizontal>
-    <Footer />
-  </L.Vertical>
-);
+}) => {
+  const { isDesktop } = React.useContext(ShowDesktopContext);
+
+  return (
+    <L.Vertical>
+      <Header />
+      <L.Horizontal>
+        {children && <L.StyledBox>{children}</L.StyledBox>}
+
+        {isDesktop && (
+          <L.StyledBox>
+            <Carousel images={images} />
+          </L.StyledBox>
+        )}
+      </L.Horizontal>
+      <Footer />
+    </L.Vertical>
+  );
+};
