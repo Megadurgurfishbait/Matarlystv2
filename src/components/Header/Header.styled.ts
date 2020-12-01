@@ -1,10 +1,10 @@
-import { Text, Box, Image } from 'grommet';
 import Link from 'next/link';
+import Image from 'next/image';
 import Slide from 'react-burger-menu/lib/menus/slide';
 import styled from 'styled-components';
 
 // Styles
-import { Font, Colors } from '@/Styles';
+import { Font, Colors, Vertical } from '@/Styles';
 import { device } from '@/Styles/BP';
 
 const StyledLink = styled(Link)``;
@@ -40,7 +40,7 @@ const StyledAnchor = styled.a`
   }
 `;
 
-const StyledText = styled(Text)`
+const StyledText = styled.h1`
   margin: 0px;
   padding-left: 50px;
   width: 100%;
@@ -55,9 +55,8 @@ const StyledText = styled(Text)`
   })};
 `;
 
-const StyledBoxInner = styled(Box)`
+const StyledBoxInner = styled(Vertical)`
   padding: 0px 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
@@ -68,10 +67,10 @@ const StyledBoxInner = styled(Box)`
   }
 `;
 
-const StyledBoxOuter = styled(Box)`
+const StyledBoxOuter = styled(Vertical)`
   background-color: ${Colors.MAIN_COLOR};
   width: 400px;
-  min-height: 100px;
+  height: max-content;
   position: fixed;
   z-index: 50;
 

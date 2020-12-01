@@ -24,10 +24,10 @@ const ListItem: React.FC<{ href: string; name: string }> = ({
 );
 
 export const Header: React.FC<{}> = () => (
-  <H.StyledBoxOuter animation="fadeIn">
+  <H.StyledBoxOuter>
     <H.Slide styles={H.StyledBurgerMenu}>
-      <H.StyledLink href="/">
-        <H.StyledImage src="/logo.png" />
+      <H.StyledLink href="/" prefetch={false}>
+        <H.StyledImage height="200px" width="200px" src="/logo.png" />
       </H.StyledLink>
       <H.Links>
         {HeaderList.map(li => (

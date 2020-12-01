@@ -1,39 +1,38 @@
-import { Box } from 'grommet';
 import { Location } from 'grommet-icons';
 import styled from 'styled-components';
 import { Colors, device } from '@/Styles';
+import { Horizontal, Vertical } from '@/Styles/GobalStyles';
 
 const LocationIconColor = Colors.MAIN_COLOR;
 
-const Container = styled(Box)`
-  padding: 30px 120px 30px 60px;
+const Container = styled(Vertical)`
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
 
   @media ${device.large} {
-    padding: 60px 30px 30px 30px;
+    width: 80%;
+    margin: 60px 60px 30px 30px;
   }
 
   @media ${device.tablet} {
-    justify-content: space-evenly;
-    align-items: center;
+    padding: 30px 0px;
+    margin: 60px 100px;
   }
 
   @media ${device.largePhone} {
-    margin-top: 50px;
     padding: 0px;
     justify-content: center;
+    margin: 0px;
+    margin-top: 50px;
   }
 `;
 
-const StyledBox = styled(Box)`
-  width: 80%;
+const StyledBox = styled(Vertical)`
   margin-bottom: 20px;
   min-height: 200px;
+  padding-right: 20px;
 
   & > label {
     width: max-content;
@@ -49,6 +48,7 @@ const StyledBox = styled(Box)`
   }
 
   @media ${device.large} {
+    padding: 0px;
     & * label {
       font-size: 30px;
     }
@@ -59,14 +59,22 @@ const StyledBox = styled(Box)`
   }
 
   @media ${device.tablet} {
+    & > label {
+      font-size: 20px;
+    }
     & * li {
-      font-size: 24px;
+      font-size: 16px;
+    }
+
+    & > ul {
+      margin: 3px;
     }
   }
 
   @media ${device.largePhone} {
     margin-bottom: 0px;
-
+    padding: 0px;
+    justify-content: center;
     & > label {
       font-size: 18px;
     }
@@ -76,16 +84,32 @@ const StyledBox = styled(Box)`
     }
 
     & > ul {
-      margin: 5px 0px 15px 0px;
+      height: max-content;
+      margin-bottom: 10px;
     }
   }
 `;
 
-const MapBox = styled(Box)`
+const MapBox = styled(Horizontal)`
   height: 40%;
   min-height: 200px;
   width: 80%;
   overflow: hidden;
+
+  @media ${device.large} {
+    justify-content: center;
+    & > div {
+      height: 300px !important;
+      width: 100% !important;
+    }
+  }
+
+  @media ${device.largePhone} {
+    justify-content: center;
+    & > div {
+      width: 100% !important;
+    }
+  }
 `;
 const SPAN = styled.span`
   color: ${Colors.SECONDARY_COLOR};
@@ -94,13 +118,11 @@ const SPAN = styled.span`
 const FlexDiv = styled.div<{ dir: string }>`
   display: flex;
   justify-content: space-between;
-
   flex-direction: ${props => props.dir};
 `;
 
 export {
   Container,
-  Box,
   Location,
   LocationIconColor,
   StyledBox,

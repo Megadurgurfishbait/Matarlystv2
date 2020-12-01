@@ -1,23 +1,23 @@
 import React from 'react';
-import { DrinkList, FoodList } from '@/components/Shared';
-
 import { Drink, Food, MenuTabProps } from '@/Models/';
+import { MenuList } from './MenuList';
 
 // Harry Styles
-import * as MT from './MenuTab.styled';
+import * as Styled from './MenuTab.styled';
 
-export const MenuTab: React.FC<MenuTabProps> = ({ Map, MapType }) => (
-  <MT.Container>
-    <MT.StyledTabs>
-      {Object.keys(Map).map(v => (
-        <MT.StyledTab key={v} title={`${v}`}>
-          {MapType === `Drykkir` ? (
-            <DrinkList List={Map[`${v}`] as Drink[]} />
-          ) : (
-            <FoodList List={Map[`${v}`] as Food[]} />
-          )}
-        </MT.StyledTab>
-      ))}
-    </MT.StyledTabs>
-  </MT.Container>
-);
+export const MenuTab: React.FC<MenuTabProps> = ({ Map, isFood }) => {
+  const [whichTab, setWhichTab] = React.useState(isFood ? `Smáréttir` : `Bjór`);
+
+  return (
+    <Styled.Container>
+      <Styled.Tab>
+        {Object.keys(Map).map(v => (
+          <Styled.Button onClick={() => setWhichTab(v)}>{v}</Styled.Button>
+        ))}
+      </Styled.Tab>
+      <Styled.Plain>
+        <MenuList List={Map[`${whichTab}`] as Drink[] & Food[]} />
+      </Styled.Plain>
+    </Styled.Container>
+  );
+};

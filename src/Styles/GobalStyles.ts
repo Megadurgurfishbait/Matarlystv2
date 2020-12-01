@@ -1,7 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
-import { Colors } from '.';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -19,27 +16,15 @@ export const GlobalStyle = createGlobalStyle`
 
 export const LayoutPadding = `padding: 0px 200px`;
 
-export const themeCustom = deepMerge(grommet, {
-  tab: {
-    color: `${Colors.THIRD_COLOR}`,
-    active: {
-      color: `${Colors.THIRD_COLOR}`,
-    },
-    hover: {
-      color: `${Colors.THIRD_COLOR}`,
-    },
-    border: {
-      color: `${Colors.MAIN_COLOR}`,
-      size: `xsmall`,
-      active: {
-        color: `${Colors.SECONDARY_COLOR}`,
-      },
-      hover: {
-        color: `${Colors.SECONDARY_COLOR}`,
-      },
-    },
-  },
-  menu: {
-    background: `${Colors.MAIN_COLOR}`,
-  },
-});
+export const Vertical = styled.div`
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+`;
+
+export const Horizontal = styled.div`
+  display: flex;
+  height: 100%;
+  width: 100%;
+`;

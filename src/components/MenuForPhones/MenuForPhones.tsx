@@ -42,7 +42,9 @@ export const MenuForPhones: React.FC<{}> = () => {
   };
 
   const createButtons = (type): JSX.Element => (
-    <MFP.StyledButton label={`${type}`} onClick={() => handleOnClick(type)} />
+    <MFP.StyledButton
+      onClick={() => handleOnClick(type)}
+    >{`${type}`}</MFP.StyledButton>
   );
 
   const Menu = ({ type }: { type: string }): JSX.Element => (
@@ -69,7 +71,7 @@ export const MenuForPhones: React.FC<{}> = () => {
   );
 
   return (
-    <MFP.StyledBox fill>
+    <MFP.StyledBox>
       {useRouter().pathname === `/drykkjarsida` ? (
         <MFP.List>{Object.values(Drykkir).map(v => createButtons(v))}</MFP.List>
       ) : (
@@ -77,9 +79,11 @@ export const MenuForPhones: React.FC<{}> = () => {
       )}
 
       {show && (
-        <MFP.StyledLayer>
+        <MFP.StyledLayer style={{ backgroundColor: `#231F1E` }}>
           <Menu type={whatToShow} />
-          <MFP.StyledButton label="Tilbaka" onClick={() => setShow(false)} />
+          <MFP.StyledButton onClick={() => setShow(false)}>
+            Tilbaka
+          </MFP.StyledButton>
         </MFP.StyledLayer>
       )}
     </MFP.StyledBox>

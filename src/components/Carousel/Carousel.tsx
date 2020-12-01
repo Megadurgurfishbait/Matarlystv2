@@ -1,20 +1,24 @@
-/* eslint-disable @typescript-eslint/quotes */
+// /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
-import { CarouselProps } from '@/Models/';
+import AliceCarousel from 'react-alice-carousel';
 
-// Harry Styles
-import * as C from './Carousel.styled';
+
 
 // Virkar ekki að setja inn layout="fill".
 // Ekki spyrja mig
-const layoutFill = {
-  layout: 'fill',
-};
+const layoutfill = {
+  layout: "fill"
+}
 
-export const Carousel: React.FC<CarouselProps> = ({ images, seconds }) => (
-  <C.StyledCarousel fill controls={false} play={seconds * 1000}>
-    {images.map(v => (
-      <C.StyledImage {...layoutFill} src={v} key={v} />
-    ))}
-  </C.StyledCarousel>
+export const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
+
+  return (
+    <AliceCarousel animationType="fadeout" autoPlay infinite autoPlayInterval={3000}>
+    {
+      images.map((v,i) => 
+        <img src={v}  key={i} height="100%" width="100%" {...layoutfill} className="sliderimg"/>)
+    }
+</AliceCarousel>
 );
+}
+

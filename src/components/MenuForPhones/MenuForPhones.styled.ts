@@ -1,7 +1,11 @@
 /* eslint-disable object-curly-newline */
-import { Colors } from '@/Styles';
-import { Layer, Box, Button } from 'grommet';
+import { Colors, Vertical } from '@/Styles';
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
+
+const Layer = dynamic(() => import(`grommet`).then(module => module.Layer), {
+  ssr: false,
+});
 
 const List = styled.ul`
   display: flex;
@@ -14,12 +18,11 @@ const List = styled.ul`
   color: ${Colors.SECONDARY_COLOR};
 `;
 
-const StyledBox = styled(Box)`
+const StyledBox = styled(Vertical)`
   background-color: ${Colors.MAIN_COLOR};
 `;
 
 const StyledLayer = styled(Layer)`
-  background-color: ${Colors.MAIN_COLOR};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +31,7 @@ const StyledLayer = styled(Layer)`
   z-index: 50000000;
 `;
 
-const StyledButton = styled(Button)`
+const StyledButton = styled.button`
   color: ${Colors.SECONDARY_COLOR};
   box-shadow: none;
   margin-top: 15px;
