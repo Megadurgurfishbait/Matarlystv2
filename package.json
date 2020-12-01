@@ -44,6 +44,7 @@
     "react-burger-menu": "^2.9.0",
     "react-dom": "^16.14.0",
     "react-responsive": "^8.1.1",
+    "react-responsive-carousel": "^3.2.10",
     "react-reveal": "^1.2.2",
     "styled-components": "^5.2.1",
     "webpack-bundle-analyzer": "^4.2.0"

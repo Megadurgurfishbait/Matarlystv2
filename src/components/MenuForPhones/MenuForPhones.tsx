@@ -80,7 +80,6 @@ export const MenuForPhones: React.FC<{}> = () => {
 
       {show && (
         <MFP.StyledLayer
-          animation="fadeIn"
           style={{
             backgroundColor: `#231F1E`,
             minHeight: `100vh`,

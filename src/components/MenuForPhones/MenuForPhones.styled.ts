@@ -3,13 +3,6 @@ import { Colors, Font, Vertical } from '@/Styles';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 
-const Layer = dynamic(
-  () => import(`grommet/components/Layer`).then(module => module.Layer),
-  {
-    ssr: false,
-  },
-);
-
 const List = styled.ul`
   display: flex;
   flex-direction: column;
@@ -25,7 +18,9 @@ const StyledBox = styled(Vertical)`
   background-color: ${Colors.MAIN_COLOR};
 `;
 
-const StyledLayer = styled(Layer)`
+const StyledLayer = styled.div`
+  position: absolute;
+
   display: flex;
   flex-direction: column;
   align-items: center;
