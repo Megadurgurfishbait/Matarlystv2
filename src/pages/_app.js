@@ -2,7 +2,6 @@
 
 import React from 'react';
 import config from 'react-reveal/globals';
-
 import { GlobalStyle } from '../Styles';
 import { Header, Footer } from '../components';
 import ShowDesktopContextProvider from '../Context/ShowDesktop';

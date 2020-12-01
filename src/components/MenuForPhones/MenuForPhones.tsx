@@ -25,7 +25,7 @@ const Drykkir = {
   raudvin: `Rauðvín`,
 };
 
-function getDrinkOrFood() {
+function getDrinkOrFood(): object {
   const { drykkir, matsedill } = FakeData;
   return useRouter().pathname === `/drykkjarsida` ? drykkir : matsedill;
 }
