@@ -4,6 +4,7 @@ import { Routes } from '@/Routes';
 
 // Harry Styles
 
+import Image from 'next/image';
 import * as H from './Header.styled';
 
 const HeaderList = [
@@ -27,7 +28,7 @@ export const Header: React.FC<{}> = () => (
   <H.StyledBoxOuter>
     <H.Slide styles={H.StyledBurgerMenu}>
       <H.StyledLink href="/" prefetch={false}>
-        <H.StyledImage height={200} width={200} src="/logo.png" />
+        <Image layout="fixed" height={200} width={200} src="/static/logo.png" />
       </H.StyledLink>
       <H.Links>
         {HeaderList.map(li => (

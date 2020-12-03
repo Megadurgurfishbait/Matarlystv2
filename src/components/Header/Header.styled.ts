@@ -16,10 +16,6 @@ const StyledSpan = styled.span`
   border-radius: 5px;
 `;
 const StyledImage = styled(Image)`
-  height: 150px;
-  width: 150px;
-  margin-bottom: 20px;
-
   &:hover {
     cursor: pointer;
   }
