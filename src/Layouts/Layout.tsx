@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Components
-import { Footer, Header } from '@/components';
 
 import { ShowDesktopContext } from '@/Context/ShowDesktop';
 import { Carousel } from '../components/Carousel/Carousel';
@@ -17,7 +16,6 @@ export const Layout: React.FC<{ images?: string[] | undefined }> = ({
 
   return (
     <L.Vertical>
-      <Header />
       <L.Horizontal>
         {children && <L.StyledBox>{children}</L.StyledBox>}
 
@@ -27,7 +25,6 @@ export const Layout: React.FC<{ images?: string[] | undefined }> = ({
           </L.StyledBox>
         )}
       </L.Horizontal>
-      <Footer />
     </L.Vertical>
   );
 };

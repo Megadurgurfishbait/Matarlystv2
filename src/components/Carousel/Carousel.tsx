@@ -9,7 +9,7 @@ import { Carousel as C } from 'react-responsive-carousel';
 // Sizes: (Condition): Stærð á mynd
 
 const SmallSizeScreen = {
-  sizes: `(max-width: 1440px) 15vw, 50vw`,
+  sizes: `(max-width: 1440px) 15vw, 40vw`,
 };
 
 const FrontPageScreen = {
