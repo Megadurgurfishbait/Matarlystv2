@@ -1,6 +1,6 @@
 /* eslint-disable object-curly-newline */
 import styled from 'styled-components';
-import { Vertical, Horizontal, Colors } from '@/Styles';
+import { Vertical, Horizontal, Colors, device } from '@/Styles';
 
 const Container = styled(Vertical)`
   align-items: center;
@@ -27,6 +27,10 @@ const Button = styled.button`
     outline: 0px;
     border-bottom: 1px solid ${Colors.SECONDARY_COLOR};
     cursor: pointer;
+  }
+
+  @media ${device.large} {
+    margin-right: 7px;
   }
 `;
 const Plain = styled(Vertical)`

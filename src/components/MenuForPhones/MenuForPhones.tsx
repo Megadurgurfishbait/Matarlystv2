@@ -53,6 +53,7 @@ export const MenuForPhones: React.FC<{}> = () => {
       {(getDrinkOrFood()[type] as []).map((v: Type) => (
         <>
           <MFP.StyledRow>
+            {console.log(v)}
             <MFP.StyledColumn>
               {v.numero ? (
                 <MFP.StyledItemTitle>{`${`${v.numero}. ${v.title}`}`}</MFP.StyledItemTitle>

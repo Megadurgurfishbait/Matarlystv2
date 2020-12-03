@@ -8,7 +8,12 @@ const ListItem: React.FC<{ items: Food }> = ({ items }): JSX.Element => (
   <Styled.ListRow>
     <Styled.ListColumn>
       <Fade>
-        <Styled.TitleContainer>{items.title}</Styled.TitleContainer>
+        {items.numero ? (
+          <Styled.TitleContainer>{`${items.numero}. ${items.title}`}</Styled.TitleContainer>
+        ) : (
+          <Styled.TitleContainer>{items.title}</Styled.TitleContainer>
+        )}
+
         <Styled.IngredContainer>{items.Ingred}</Styled.IngredContainer>
       </Fade>
     </Styled.ListColumn>

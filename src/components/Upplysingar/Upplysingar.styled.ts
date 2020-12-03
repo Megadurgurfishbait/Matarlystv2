@@ -10,9 +10,12 @@ const Container = styled(Vertical)`
   justify-content: center;
   align-items: center;
   padding-left: 100px;
+  font-family: Raleway;
+  letter-spacing: 1.3px;
   @media ${device.large} {
     width: 80%;
     margin: 60px 60px 30px 30px;
+    padding-left: 0px;
   }
 
   @media ${device.tablet} {
@@ -38,35 +41,40 @@ const StyledBox = styled(Vertical)`
   & > label {
     width: max-content;
     padding-bottom: 3px;
-    border-bottom: ${`1px solid ${Colors.SECONDARY_COLOR}`};
+    border-bottom: ${`2px solid ${Colors.SECONDARY_COLOR}`};
     font-size: 30px;
     font-family: 'roboto';
-    line-height: 18px;
+    line-height: 20px;
   }
   & > ul {
     list-style: none;
     padding: 0px;
     height: max-content;
-    margin: 5px 0px 15px 0px;
+    margin: 5px 0px 20px 0px;
   }
 
   @media ${device.large} {
     padding: 0px;
+    justify-content: flex-end;
     & * label {
       font-size: 30px;
     }
 
     & * li {
-      font-size: 20px;
+      font-size: 24px;
+    }
+    & > ul {
+      width: 100%;
     }
   }
 
   @media ${device.tablet} {
+    justify-content: flex-end;
     & > label {
-      font-size: 30px;
+      font-size: 28px;
     }
     & * li {
-      font-size: 24px;
+      font-size: 22px;
     }
 
     & > ul {
@@ -135,7 +143,7 @@ const FlexDiv = styled.div<{ dir: string }>`
   width: 400px;
   justify-content: space-between;
   flex-direction: ${props => props.dir};
-  @media ${device.largePhone} {
+  @media ${device.large} {
     width: 100%;
   }
 `;

@@ -11,7 +11,7 @@ const Home: React.FC<{}> = () => (
   <Horizontal>
     {/* <Loading /> */}
 
-    <Carousel images={HomeImages} />
+    <Carousel homePage images={HomeImages} />
   </Horizontal>
 );
 

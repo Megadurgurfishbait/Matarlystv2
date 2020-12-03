@@ -22,8 +22,8 @@ export const Layout: React.FC<{ images?: string[] | undefined }> = ({
         {children && <L.StyledBox>{children}</L.StyledBox>}
 
         {isDesktop && (
-          <L.StyledBox>
-            <Carousel images={images} />
+          <L.StyledBox style={{ maxWidth: `50vw` }}>
+            <Carousel homePage={false} images={images} />
           </L.StyledBox>
         )}
       </L.Horizontal>
