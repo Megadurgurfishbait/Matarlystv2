@@ -1,6 +1,5 @@
 export default {
   title: 'Kaffi Matarlyst',
-  lang: 'is',
   description: 'Veitingastaður, bar, kaffihús',
   canonical: 'https://www.kaffimatarlyst.is',
   openGraph: {
@@ -16,5 +15,8 @@ export default {
         alt: 'Kaffi Matarlyst Logo',
       },
     ],
+  },
+  additionalMetaTags: {
+    lang: 'is',
   },
 };
