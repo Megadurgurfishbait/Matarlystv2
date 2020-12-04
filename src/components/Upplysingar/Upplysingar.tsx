@@ -5,7 +5,6 @@ import getConfig from 'next/config';
 import dynamic from 'next/dynamic';
 import React from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import styled from 'styled-components';
 import * as U from './Upplysingar.styled';
 
 const MapGL = dynamic(() => import(`@urbica/react-map-gl`), {
