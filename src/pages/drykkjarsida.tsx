@@ -3,7 +3,7 @@ import React from 'react';
 import { NextSeo } from 'next-seo';
 
 import { drykkir } from '../db.json';
-import { images } from '../FakeData';
+
 import { Layout } from '../Layouts/Layout';
 import { ShowDesktopContext } from '../Context/ShowDesktop';
 import { MenuTab } from '../components/MenuTab/MenuTab';
@@ -14,10 +14,10 @@ const Drykkjarsedill: React.FC<{}> = () => {
   const { isPhone } = React.useContext(ShowDesktopContext);
   const SEO = {
     title: `${conf.title} | Drykkir`,
-    description: `Drykkir sem við seljum`,
+    description: `Drykkir sem hægt er að kaupa á Kaffi Matarlyst`,
     openGraph: {
       title: `Drykkir`,
-      description: `Drykkir sem við seljum`,
+      description: `Drykkir sem hægt er að kaupa á Kaffi Matarlyst`,
     },
   };
   return (
@@ -26,7 +26,7 @@ const Drykkjarsedill: React.FC<{}> = () => {
       {isPhone ? (
         <MenuForPhones />
       ) : (
-        <Layout images={images}>
+        <Layout images={[`/static/Restaurant2.jpg`, `/static/haed-matur.jpg`]}>
           <MenuTab isFood={false} Map={drykkir} />
         </Layout>
       )}

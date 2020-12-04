@@ -1,7 +1,6 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
 import { matsedill } from '@/db.json';
-import { images } from '@/FakeData';
 import { ShowDesktopContext } from '@/Context/ShowDesktop';
 // Components
 import { Layout } from '@/Layouts/Layout';
@@ -15,10 +14,10 @@ const Menu: React.FC<{}> = () => {
 
   const SEO = {
     title: `${conf.title} | Matseðill`,
-    description: `Matseðillinn okkar`,
+    description: `Matseðill okkar á Kaffi Matarlyst`,
     openGraph: {
       title: `${conf.title} | Matseðill`,
-      description: `Matseðilinn okkar`,
+      description: `Matseðili okkar á Kaffi Matarlyst`,
     },
   };
   return (
@@ -27,7 +26,7 @@ const Menu: React.FC<{}> = () => {
       {isPhone ? (
         <MenuForPhones />
       ) : (
-        <Layout images={images}>
+        <Layout images={[`/static/Restaurant2.jpg`, `/static/haed-matur.jpg`]}>
           <MenuTab isFood Map={matsedill} />
         </Layout>
       )}

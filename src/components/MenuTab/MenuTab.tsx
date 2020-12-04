@@ -12,7 +12,9 @@ export const MenuTab: React.FC<MenuTabProps> = ({ Map, isFood }) => {
     <Styled.Container>
       <Styled.Tab>
         {Object.keys(Map).map(v => (
-          <Styled.Button onClick={() => setWhichTab(v)}>{v}</Styled.Button>
+          <Styled.Button key={v} onClick={() => setWhichTab(v)}>
+            {v}
+          </Styled.Button>
         ))}
       </Styled.Tab>
       <Styled.Plain>

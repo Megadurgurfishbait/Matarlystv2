@@ -13,7 +13,12 @@ export default function MyApp({ Component, pageProps }) {
   // eslint-disable-next-line react/react-in-jsx-scope
   return (
     <ShowDesktopContextProvider>
-      <DefaultSeo {...SEO} />
+      <DefaultSeo
+        {...SEO}
+        languageAlternates={[
+          { href: 'https://www.kaffimatarlyst.is', hrefLang: 'is' },
+        ]}
+      />
       <SocialProfileJsonLd
         type="Organization"
         name="Kaffi Matarlyst"
@@ -48,6 +53,7 @@ export default function MyApp({ Component, pageProps }) {
         rel="dns-prefetch"
         async
       />
+
       <GlobalStyle />
       <Header />
       <Component {...pageProps} />
