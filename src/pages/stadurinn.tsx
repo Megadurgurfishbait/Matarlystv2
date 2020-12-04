@@ -3,12 +3,14 @@ import { Layout } from '@/Layouts';
 import styled from 'styled-components';
 import { Colors, Vertical } from '@/Styles';
 import { NextSeo } from 'next-seo';
+import { SiteURL } from '@/Routes';
 import conf from '../../next-seo.config';
 
 const Stadurinn: React.FC<{}> = () => {
   const SEO = {
     title: `${conf.title} | Staðurinn`,
     description: `Um Kaffi Matarlyst`,
+    canonical: `${SiteURL}/matsedill`,
     openGraph: {
       title: `Drykkir`,
       description: `Um Kaffi Matarlyst`,

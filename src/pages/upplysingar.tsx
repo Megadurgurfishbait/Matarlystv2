@@ -6,12 +6,14 @@ import { NextSeo } from 'next-seo';
 
 import { Layout } from '@/Layouts';
 import { Info } from '@/components';
+import { SiteURL } from '@/Routes';
 import conf from '../../next-seo.config';
 
 const Upplysingar: React.FC = () => {
   const SEO = {
     title: `${conf.title} | Upplýsingar`,
     description: `Opnunartími og staðsetning Kaffi Matarlyst`,
+    canonical: `${SiteURL}/matsedill`,
     openGraph: {
       title: `${conf.title} | Upplýsingar`,
       description: `Opnunartími og staðsetning Kaffi Matarlyst`,

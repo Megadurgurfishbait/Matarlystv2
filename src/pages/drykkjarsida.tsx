@@ -2,6 +2,7 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
 
+import { SiteURL } from '@/Routes';
 import { drykkir } from '../db.json';
 
 import { Layout } from '../Layouts/Layout';
@@ -15,6 +16,7 @@ const Drykkjarsedill: React.FC<{}> = () => {
   const SEO = {
     title: `${conf.title} | Drykkir`,
     description: `Drykkir sem hægt er að kaupa á Kaffi Matarlyst`,
+    canonical: `${SiteURL}/drykkjarsida`,
     openGraph: {
       title: `Drykkir`,
       description: `Drykkir sem hægt er að kaupa á Kaffi Matarlyst`,

@@ -4,6 +4,7 @@ import { matsedill } from '@/db.json';
 import { ShowDesktopContext } from '@/Context/ShowDesktop';
 // Components
 import { Layout } from '@/Layouts/Layout';
+import { SiteURL } from '@/Routes';
 import { MenuTab } from '../components/MenuTab/MenuTab';
 import { MenuForPhones } from '../components/MenuForPhones/MenuForPhones';
 import conf from '../../next-seo.config';
@@ -15,6 +16,7 @@ const Menu: React.FC<{}> = () => {
   const SEO = {
     title: `${conf.title} | Matseðill`,
     description: `Matseðill okkar á Kaffi Matarlyst`,
+    canonical: `${SiteURL}/matsedill`,
     openGraph: {
       title: `${conf.title} | Matseðill`,
       description: `Matseðili okkar á Kaffi Matarlyst`,
