@@ -15,8 +15,8 @@ export const Loading: React.FC = () => {
     <L.Container show={show}>
       <L.BlackBg />
       <L.ImageFloat>
-        <L.ImageRotate src={LoadingImage} zIndex={2} />
-        <L.Image src={solidIcon} zIndex={1} />
+        <L.ImageRotate alt="Logo Matarlyst" src={LoadingImage} zIndex={2} />
+        <L.Image alt="Logo Matarlyst" src={solidIcon} zIndex={1} />
       </L.ImageFloat>
     </L.Container>
   );

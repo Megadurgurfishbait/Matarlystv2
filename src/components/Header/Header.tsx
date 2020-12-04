@@ -19,16 +19,28 @@ const ListItem: React.FC<{ href: string; name: string }> = ({
 }): JSX.Element => (
   <H.StyledLink key={name} href={href} prefetch={false}>
     <H.StyledSpan>
-      <H.StyledAnchor>{name}</H.StyledAnchor>
+      <H.StyledAnchor href={href}>{name}</H.StyledAnchor>
     </H.StyledSpan>
   </H.StyledLink>
 );
 
 export const Header: React.FC<{}> = () => (
-  <H.StyledBoxOuter>
-    <H.Slide styles={H.StyledBurgerMenu}>
+  <H.StyledBoxOuter aria-hidden="false">
+    <H.Slide
+      styles={H.StyledBurgerMenu}
+      id="global-nav"
+      aria-label="Main navigation"
+      aria-haspopup="true"
+      aria-hidden="false"
+    >
       <H.StyledLink href="/" prefetch={false}>
-        <Image layout="fixed" height={200} width={200} src="/static/logo.png" />
+        <Image
+          layout="fixed"
+          height={200}
+          width={200}
+          src="/static/logo.png"
+          alt="Logo Matarlyst"
+        />
       </H.StyledLink>
       <H.Links>
         {HeaderList.map(li => (
@@ -82,7 +94,3 @@ export const Header: React.FC<{}> = () => (
     </H.StyledBoxInner>
   </H.StyledBoxOuter>
 );
-
-/*
-
-        */

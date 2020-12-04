@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Slide from 'react-burger-menu/lib/menus/slide';
 import styled from 'styled-components';
 
@@ -7,7 +6,11 @@ import styled from 'styled-components';
 import { Font, Colors, Vertical } from '@/Styles';
 import { device } from '@/Styles/BP';
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  &:hover {
+    cursor: pointer;
+  }
+`;
 const StyledSpan = styled.span`
   background-color: ${Colors.SECONDARY_COLOR_DARKER};
   padding: 5px;
@@ -15,11 +18,7 @@ const StyledSpan = styled.span`
 
   border-radius: 5px;
 `;
-const StyledImage = styled(Image)`
-  &:hover {
-    cursor: pointer;
-  }
-`;
+
 const StyledAnchor = styled.a`
   ${Font({
     fontsize: 24,
@@ -30,6 +29,7 @@ const StyledAnchor = styled.a`
   color: white;
   margin: 10px 0px;
   text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
@@ -152,7 +152,6 @@ export {
   StyledBurgerMenu,
   StyledBoxOuter,
   StyledLink,
-  StyledImage,
   StyledSpan,
   Slide,
   BottomRow,

@@ -41,6 +41,7 @@ export const Carousel: React.FC<{ images: string[]; homePage: boolean }> = ({
             width={1920}
             priority
             src={v}
+            alt="Myndir af mat og staðnum"
           />
         </MyDiv>
       ))}
