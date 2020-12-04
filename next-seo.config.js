@@ -1,17 +1,19 @@
+import { SiteURL } from './src/Routes';
+
 export default {
   title: 'Kaffi Matarlyst',
   description:
     'Veitingastaður, bar, kaffihús á Selfossi. Danskt hygge í bland við spænska gleði í matargerð.',
-  canonical: 'https://www.kaffimatarlyst.is',
+  canonical: `${SiteURL}`,
   openGraph: {
     title: 'Kaffi Matarlyst',
     locale: 'is_IS',
-    url: 'https://www.kaffimatarlyst.is',
+    url: `${SiteURL}`,
     site_name: 'Kaffi Matarlyst',
-    type: 'Restaurant',
+    type: 'Website',
     images: [
       {
-        url: 'https://www.kaffimatarlyst.is/static/logo.png',
+        url: `${SiteURL}/static/logo.png`,
         width: 200,
         height: 200,
         alt: 'Kaffi Matarlyst Logo',

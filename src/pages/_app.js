@@ -4,7 +4,7 @@ import { DefaultSeo, SocialProfileJsonLd, LocalBusinessJsonLd } from 'next-seo';
 import { GlobalStyle } from '../Styles';
 import { Header, Footer } from '../components';
 import ShowDesktopContextProvider from '../Context/ShowDesktop';
-
+import { SiteURL } from '../Routes';
 import SEO from '../../next-seo.config';
 
 config({ ssrFadeout: true });
@@ -15,14 +15,12 @@ export default function MyApp({ Component, pageProps }) {
     <ShowDesktopContextProvider>
       <DefaultSeo
         {...SEO}
-        languageAlternates={[
-          { href: 'https://www.kaffimatarlyst.is', hrefLang: 'is' },
-        ]}
+        languageAlternates={[{ href: `${SiteURL}`, hrefLang: 'is' }]}
       />
       <SocialProfileJsonLd
         type="Organization"
         name="Kaffi Matarlyst"
-        url="https://www.kaffimatarlyst.is"
+        url={`${SiteURL}`}
         sameAs={[
           'https://www.instagram.com/matarlyst.cafe.bar.restaurant/',
           'https://www.facebook.com/Matarlyst-Caf%C3%A9-Bar-Restaurant-107006814510537',
@@ -30,10 +28,10 @@ export default function MyApp({ Component, pageProps }) {
       />
       <LocalBusinessJsonLd
         type="Restaurant"
-        id="https://www.kaffimatarlyst.is"
+        id={`${SiteURL}`}
         name="Kaffi Matarlyst"
         description="Veitingastaður við aðalgötu Selfossbæjar"
-        url="https://www.kaffimatarlyst.is/upplysingar"
+        url={`${SiteURL}/upplysingar`}
         telephone="+3547931952"
         address={{
           streetAddress: 'Austurvegur 35',
@@ -46,7 +44,7 @@ export default function MyApp({ Component, pageProps }) {
           latitude: '63.9374',
           longitude: '-20.9925',
         }}
-        images={['https://www.kaffimatarlyst.is/static/logo.png']}
+        images={[`${SiteURL}/static/logo.png`]}
       />
       <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@100;400&display=swap"
