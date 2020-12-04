@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Slide from 'react-burger-menu/lib/menus/slide';
+import { slide as Menu } from 'react-burger-menu';
 import styled from 'styled-components';
 
 // Styles
@@ -7,8 +7,10 @@ import { Font, Colors, Vertical } from '@/Styles';
 import { device } from '@/Styles/BP';
 
 const StyledLink = styled(Link)`
-  &:hover {
-    cursor: pointer;
+  & > img {
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;
 const StyledSpan = styled.span`
@@ -153,7 +155,7 @@ export {
   StyledBoxOuter,
   StyledLink,
   StyledSpan,
-  Slide,
+  Menu,
   BottomRow,
   Links,
 };

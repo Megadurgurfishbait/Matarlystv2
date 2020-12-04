@@ -138,9 +138,9 @@ const SPAN = styled.span`
   color: ${Colors.SECONDARY_COLOR};
 `;
 
-const FlexDiv = styled.div<{ dir: string }>`
+const FlexDiv = styled.li<{ dir: string }>`
   display: flex;
-  width: 400px;
+  width: 450px;
   justify-content: space-between;
   flex-direction: ${props => props.dir};
   @media ${device.large} {

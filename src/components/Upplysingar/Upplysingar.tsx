@@ -5,6 +5,7 @@ import getConfig from 'next/config';
 import dynamic from 'next/dynamic';
 import React from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import styled from 'styled-components';
 import * as U from './Upplysingar.styled';
 
 const MapGL = dynamic(() => import(`@urbica/react-map-gl`), {
@@ -38,35 +39,35 @@ export const Info: React.FC<{}> = () => (
       <label>Sími og Póstur</label>
       <ul>
         <U.FlexDiv dir="column">
-          <li>
+          <span>
             S<U.SPAN>:</U.SPAN> 846 1151
-          </li>
-          <li>
+          </span>
+          <span>
             P<U.SPAN>:</U.SPAN> Matarlyst@Matarlyst.is
-          </li>
+          </span>
         </U.FlexDiv>
       </ul>
       <label>Opnunartími</label>
       <ul>
         <U.FlexDiv dir="row">
-          <li>Mánudagur</li>
-          <li>Lokað</li>
+          <span>Mánudagur</span>
+          <span>Lokað</span>
         </U.FlexDiv>
         <U.FlexDiv dir="row">
-          <li>
+          <span>
             Þriðjudaga <U.SPAN>-</U.SPAN> Fimmtudags
-          </li>
-          <li>
+          </span>
+          <span>
             11:00 <U.SPAN>-</U.SPAN> 21:00
-          </li>
+          </span>
         </U.FlexDiv>
         <U.FlexDiv dir="row">
-          <li>
+          <span>
             Föstudagur <U.SPAN>-</U.SPAN> Sunnudags
-          </li>
-          <li>
+          </span>
+          <span>
             11:00 <U.SPAN>-</U.SPAN> 22:00
-          </li>
+          </span>
         </U.FlexDiv>
       </ul>
       <label>Staðsetning</label>
