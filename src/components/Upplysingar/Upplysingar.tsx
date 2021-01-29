@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import React from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import * as U from './Upplysingar.styled';
+import { Colors } from '@/Styles';
 
 const MapGL = dynamic(() => import(`@urbica/react-map-gl`), {
   ssr: false,
@@ -23,6 +24,25 @@ const location = {
   longitude: -20.9925,
 };
 const { publicRuntimeConfig } = getConfig();
+
+const ExternalIconn = (): JSX.Element => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    strokeWidth="1.5"
+    fill={`${Colors.MAIN_COLOR}`}
+    stroke={`${Colors.SECONDARY_COLOR}`}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" />
+    <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+    <line x1="10" y1="14" x2="20" y2="4" />
+    <polyline points="15 4 20 4 20 9" />
+  </svg>
+);
 
 const settings = {
   mapStyle: `mapbox://styles/mapbox/light-v9`,
@@ -42,7 +62,7 @@ export const Info: React.FC<{}> = () => (
             S<U.SPAN>:</U.SPAN> 846 1151
           </span>
           <span>
-            P<U.SPAN>:</U.SPAN> Matarlyst@Matarlyst.is
+            P<U.SPAN>:</U.SPAN> Best að senda skilaðboð á Facebook
           </span>
         </U.FlexDiv>
       </ul>
@@ -71,7 +91,12 @@ export const Info: React.FC<{}> = () => (
       </ul>
       <label>Staðsetning</label>
       <ul>
-        <li>Austurvegur 35</li>
+        <li className="withExternal">
+          <a href="https://www.google.com/maps/place/Austurvegur+35,+800+Selfoss/@63.9374362,-21.0005843,15z/data=!3m1!4b1!4m5!3m4!1s0x48d65fc8d6d55e01:0x26081c47f22eebcd!8m2!3d63.937427!4d-20.991851">
+            Austurvegur 35
+          </a>
+          <ExternalIconn />
+        </li>
         <li>800 Selfoss</li>
       </ul>
     </U.StyledBox>

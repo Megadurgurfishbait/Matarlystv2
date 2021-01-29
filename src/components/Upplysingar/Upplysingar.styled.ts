@@ -42,7 +42,7 @@ const StyledBox = styled(Vertical)`
     width: max-content;
     padding-bottom: 3px;
     border-bottom: ${`2px solid ${Colors.SECONDARY_COLOR}`};
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'roboto';
     line-height: 20px;
   }
@@ -53,15 +53,27 @@ const StyledBox = styled(Vertical)`
     margin: 5px 0px 20px 0px;
   }
 
+  & * .withExternal {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    & > a {
+      text-decoration: none;
+      color: inherit;
+    }
+    & > svg {
+      margin-left: 0.2rem;
+    }
+  }
+
   @media ${device.large} {
     padding: 0px;
     justify-content: flex-end;
     & * label {
-      font-size: 30px;
-    }
-
-    & * li {
       font-size: 24px;
+    }
+    & * li {
+      font-size: 20px;
     }
     & > ul {
       width: 100%;
@@ -70,11 +82,12 @@ const StyledBox = styled(Vertical)`
 
   @media ${device.tablet} {
     justify-content: flex-end;
+
     & > label {
-      font-size: 28px;
+      font-size: 24px;
     }
     & * li {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     & > ul {
@@ -87,7 +100,7 @@ const StyledBox = styled(Vertical)`
     padding: 0px;
     justify-content: center;
     & > label {
-      font-size: 18px;
+      font-size: 16px;
     }
     & * li {
       font-size: 14px;
@@ -96,7 +109,8 @@ const StyledBox = styled(Vertical)`
 
     & > ul {
       height: max-content;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+
       width: 100%;
     }
   }
@@ -143,6 +157,14 @@ const FlexDiv = styled.li<{ dir: string }>`
   width: 450px;
   justify-content: space-between;
   flex-direction: ${props => props.dir};
+
+  & > span {
+    @media ${device.largePhone} {
+      font-size: 12px;
+      letter-spacing: 0.5;
+    }
+  }
+
   @media ${device.large} {
     width: 100%;
   }

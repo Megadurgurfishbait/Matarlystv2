@@ -1,15 +1,18 @@
 import React from 'react';
 
 // Harry Styles
-import { Container, List, Li } from './Footer.styled';
+import { Container, List, Li, H1 } from './Footer.styled';
 
 export const Footer: React.FC<{}> = () => (
   <Container>
-    <List>
+    {/* <List>
       <Li>Austurvegur 35</Li>
       <Li>800 Selfoss</Li>
-      <Li>7931952</Li>
-      <Li>Matarlyst(at)matarlyst.is</Li>
-    </List>
+      <Li>
+        <a href="tel:+354-793-1952">+354 793 1952 </a>
+      </Li>
+    </List> */}
+
+    <H1>ATH SÍÐAN ER Í VINNSLU</H1>
   </Container>
 );

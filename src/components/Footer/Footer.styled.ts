@@ -41,19 +41,34 @@ const Li = styled.li`
   margin: 0px;
   line-height: 12px;
   color: ${Colors.THIRD_COLOR};
+
+  & > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   &:not(:first-child) {
     border-left: 2px solid ${Colors.SECONDARY_COLOR};
   }
 
   @media ${device.largePhone} {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0px;
     padding: 0px 6px;
   }
 
   @media ${device.smallPhone} {
-    padding: 0px 2px;
+    padding: 0px 0.8rem;
+    font-size: 11px;
   }
 `;
 
-export { Container, List, Li };
+const H1 = styled.h1`
+  display: flex;
+  font-family: 'raleway';
+  font-weight: 400;
+  align-items: center;
+  color: ${Colors.SECONDARY_COLOR};
+`;
+
+export { Container, List, Li, H1 };

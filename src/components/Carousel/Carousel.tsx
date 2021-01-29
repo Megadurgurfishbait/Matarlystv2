@@ -28,6 +28,7 @@ export const Carousel: React.FC<{ images: string[]; homePage: boolean }> = ({
   homePage,
 }) => {
   const props = homePage ? FrontPageScreen : SmallSizeScreen;
+
   return (
     <StyledCarousel
       showThumbs={false}
