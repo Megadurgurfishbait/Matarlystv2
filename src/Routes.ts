@@ -8,4 +8,4 @@ export enum Routes {
   Drykkjarsida = `/drykkjarsida`,
 }
 
-export const SiteURL = `https://kaffimatarlyst.is/`;
+export const SiteURL = `https://www.kaffimatarlyst.is/`;
