@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import * as FakeData from '@/db.json';
+import * as ImageData from '@/db.json';
 
 import { Type } from '@/Models';
 import * as MFP from './MenuForPhones.styled';
@@ -26,7 +26,7 @@ const Drykkir = {
 };
 
 function getDrinkOrFood(): object {
-  const { drykkir, matsedill } = FakeData;
+  const { drykkir, matsedill } = ImageData;
   return useRouter().pathname === `/drykkjarsida` ? drykkir : matsedill;
 }
 

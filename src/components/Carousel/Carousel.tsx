@@ -2,7 +2,7 @@
 // /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
+import Image, { ImageProps } from 'next/image';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel as C } from 'react-responsive-carousel';
@@ -15,13 +15,13 @@ const SmallSizeScreen = {
   height: `1280`,
   width: `1920`,
   objectFit: 'fill',
-};
+} as ImageProps;
 
 const FrontPageScreen = {
   sizes: `(max-width: 600px) 15w, (max-width: 1441px) 40vw, 70vw`,
   layout: `fill`,
   objectFit: 'fill',
-};
+} as ImageProps;
 
 export const Carousel: React.FC<{ images: string[]; homePage: boolean }> = ({
   images,

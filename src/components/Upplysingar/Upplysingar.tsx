@@ -4,9 +4,9 @@
 import getConfig from 'next/config';
 import dynamic from 'next/dynamic';
 import React from 'react';
+import { Colors } from '@/Styles';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import * as U from './Upplysingar.styled';
-import { Colors } from '@/Styles';
 
 const MapGL = dynamic(() => import(`@urbica/react-map-gl`), {
   ssr: false,

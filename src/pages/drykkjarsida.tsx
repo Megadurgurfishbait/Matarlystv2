@@ -3,7 +3,7 @@ import React from 'react';
 import { NextSeo } from 'next-seo';
 
 import { SiteURL } from '@/Routes';
-import { images } from '@/FakeData';
+import { images } from '@/ImageData';
 import { drykkir } from '../db.json';
 
 import { Layout } from '../Layouts/Layout';

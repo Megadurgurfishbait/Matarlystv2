@@ -5,7 +5,7 @@ import { ShowDesktopContext } from '@/Context/ShowDesktop';
 
 import { Horizontal } from '../Styles';
 import { Carousel } from '../components/Carousel/Carousel';
-import { HomeImages, HomeImageMidSize, HomeImagePhoneSize } from '../FakeData';
+import { HomeImages, HomeImageMidSize, HomeImagePhoneSize } from '../ImageData';
 // eslint-disable-next-line import/no-extraneous-dependencies
 
 const Home: React.FC<{}> = () => {
@@ -20,6 +20,7 @@ const Home: React.FC<{}> = () => {
   return (
     <Horizontal>
       {/* {isDesktop && <Loading />} */}
+      {console.log(imageSizes())}
       <Carousel homePage images={imageSizes()} />
     </Horizontal>
   );

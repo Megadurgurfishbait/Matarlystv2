@@ -10,8 +10,8 @@ const HomeImageMidSize = [
 ];
 
 const HomeImagePhoneSize = [
-  `/static/Cover_1_PhoneSize.jpg`,
-  `/static/Cover_2_PhoneSize.jpg`,
+  `/static/Cover_1_phoneSize.jpg`,
+  `/static/Cover_2_phoneSize.jpg`,
 ];
 
 const LoadingImage = `/static/logo-rotate.png`;

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { LoadingImage, solidIcon } from '@/FakeData';
+import { LoadingImage, solidIcon } from '@/ImageData';
 import * as L from './Loading.styled';
 
 export const Loading: React.FC = () => {

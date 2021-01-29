@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '@/Layouts';
 import styled from 'styled-components';
-import { images } from '@/FakeData';
+import { images } from '@/ImageData';
 import { Colors, Vertical } from '@/Styles';
 import { NextSeo } from 'next-seo';
 import { SiteURL } from '@/Routes';

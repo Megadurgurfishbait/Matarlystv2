@@ -3,7 +3,7 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
 import { NextSeo } from 'next-seo';
-import { images } from '@/FakeData';
+import { images } from '@/ImageData';
 import { Layout } from '@/Layouts';
 import { Info } from '@/components';
 import { SiteURL } from '@/Routes';

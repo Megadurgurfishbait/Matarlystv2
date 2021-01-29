@@ -1,6 +1,6 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
-import { images } from '@/FakeData';
+import { images } from '@/ImageData';
 import { matsedill } from '@/db.json';
 import { ShowDesktopContext } from '@/Context/ShowDesktop';
 // Components
