@@ -8,4 +8,4 @@ export enum Routes {
   Drykkjarsida = `/drykkjarsida`,
 }
 
-export const SiteURL = `https://matarlystv2.vercel.app/`;
+export const SiteURL = `https://kaffimatarlyst.is/`;

@@ -4,31 +4,31 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 
 <url>
-  <loc>https://matarlystv2.vercel.app/</loc>
+  <loc>https://kaffimatarlyst.is/</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://matarlystv2.vercel.app/matsedill</loc>
+  <loc>https://kaffimatarlyst.is/matsedill</loc>
+  <lastmod>2020-12-04T17:07:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kaffimatarlyst.is/drykkjarsida</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://matarlystv2.vercel.app/drykkjarsida</loc>
+  <loc>https://kaffimatarlyst.is/stadurinn</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://matarlystv2.vercel.app/stadurinn</loc>
-  <lastmod>2020-12-04T17:07:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://matarlystv2.vercel.app/upplysingar</loc>
+  <loc>https://kaffimatarlyst.is/upplysingar</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
