@@ -10,16 +10,18 @@ import { Carousel as C } from 'react-responsive-carousel';
 // Sizes: (Condition): Stærð á mynd
 
 const SmallSizeScreen = {
-  sizes: `(max-width: 1440px) 15vw, 40vw`,
+  sizes: `(max-width: 1500px) 30vw, 50vw`,
   layout: `responsive`,
-  height: `1280`,
-  width: `1920`,
+  height: `600`,
+  width: `1000`,
   objectFit: 'fill',
 } as ImageProps;
 
 const FrontPageScreen = {
-  sizes: `(max-width: 600px) 15w, (max-width: 1441px) 40vw, 70vw`,
-  layout: `fill`,
+  sizes: `(max-width: 450px) 20vw, (max-width: 600px) 58vw, (max-width: 1000px) 98vw, (max-width: 1300px) 67vw, 120vw`,
+  layout: `responsive`,
+  height: `1280`,
+  width: `1920`,
   objectFit: 'fill',
 } as ImageProps;
 

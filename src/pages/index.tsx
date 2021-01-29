@@ -9,18 +9,19 @@ import { HomeImages, HomeImageMidSize, HomeImagePhoneSize } from '../ImageData';
 // eslint-disable-next-line import/no-extraneous-dependencies
 
 const Home: React.FC<{}> = () => {
-  const { isDesktop, isIpad } = React.useContext(ShowDesktopContext);
+  const { isDesktop, isIpad, isPhone } = React.useContext(ShowDesktopContext);
 
   const imageSizes = (): string[] => {
     if (isDesktop) return HomeImages;
     if (isIpad) return HomeImageMidSize;
-    return HomeImagePhoneSize;
+    if (isPhone) return HomeImagePhoneSize;
+    return [];
   };
 
   return (
     <Horizontal>
       {/* {isDesktop && <Loading />} */}
-      {console.log(imageSizes())}
+
       <Carousel homePage images={imageSizes()} />
     </Horizontal>
   );

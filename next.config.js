@@ -7,6 +7,9 @@ module.exports = {
     // Will be available on both server and client
     MAP_ID: process.env.NEXT_PUBLIC_MAP_ID, // Pass through env variables
   },
+  images: {
+    deviceSizes: [500, 640, 750, 828, 1080, 1200, 1920],
+  },
 
   // webpack: (config, { isServer }) => {
   //   if (process.env.ANALYZE) {
