@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout } from '@/Layouts';
 import styled from 'styled-components';
+import { images } from '@/FakeData';
 import { Colors, Vertical } from '@/Styles';
 import { NextSeo } from 'next-seo';
 import { SiteURL } from '@/Routes';
@@ -17,7 +18,7 @@ const Stadurinn: React.FC<{}> = () => {
     },
   };
   return (
-    <Layout images={[`/static/Restaurant2.jpg`, `/static/haed-matur.jpg`]}>
+    <Layout images={images}>
       <NextSeo {...SEO} />
       <Container>
         <div>

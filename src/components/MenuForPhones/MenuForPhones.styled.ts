@@ -8,7 +8,6 @@ const List = styled.ul`
   flex-direction: column;
   height: 100%;
   justify-content: center;
-
   padding: 40px;
   list-style: none;
   color: ${Colors.SECONDARY_COLOR};
@@ -70,7 +69,7 @@ const StyledItemTitle = styled.h4`
   margin: 0px;
   color: ${Colors.SECONDARY_COLOR};
   opacity: 0.85;
-  font-weight: 100;
+  font-weight: 300;
   padding-right: 10px;
 `;
 

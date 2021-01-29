@@ -8,30 +8,28 @@
 
 
 <url> 
-  <loc>https://kaffimatarlyst.is/</loc>
+  <loc>https://www.kaffimatarlyst.is/</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://kaffimatarlyst.is/matsedill</loc>
+  <loc>https://www.kaffimatarlyst.is/matsedill</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://kaffimatarlyst.is/drykkjarsida</loc>
+  <loc>https://www.kaffimatarlyst.is/drykkjarsida</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kaffimatarlyst.is/stadurinn</loc>
+  <loc>https://www.kaffimatarlyst.is/stadurinn</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kaffimatarlyst.is/upplysingar</loc>
+  <loc>https://www.kaffimatarlyst.is/upplysingar</loc>
   <lastmod>2020-12-04T17:07:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
 </urlset>

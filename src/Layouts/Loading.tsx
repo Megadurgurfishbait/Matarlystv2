@@ -6,7 +6,7 @@ export const Loading: React.FC = () => {
   const [show, setShow] = React.useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShow(false), 4000);
+    const timer = setTimeout(() => setShow(false), 2000);
 
     return () => clearTimeout(timer);
   }, []);

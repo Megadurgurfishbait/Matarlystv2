@@ -1,17 +1,28 @@
 import React from 'react';
 // Components
+import { Loading } from '@/Layouts';
+import { ShowDesktopContext } from '@/Context/ShowDesktop';
 
 import { Horizontal } from '../Styles';
 import { Carousel } from '../components/Carousel/Carousel';
-import { HomeImages } from '../FakeData';
+import { HomeImages, HomeImageMidSize, HomeImagePhoneSize } from '../FakeData';
 // eslint-disable-next-line import/no-extraneous-dependencies
 
-const Home: React.FC<{}> = () => (
-  <Horizontal>
-    {/* <Loading /> */}
+const Home: React.FC<{}> = () => {
+  const { isDesktop, isIpad } = React.useContext(ShowDesktopContext);
 
-    <Carousel homePage images={HomeImages} />
-  </Horizontal>
-);
+  const imageSizes = (): string[] => {
+    if (isDesktop) return HomeImages;
+    if (isIpad) return HomeImageMidSize;
+    return HomeImagePhoneSize;
+  };
+
+  return (
+    <Horizontal>
+      {/* {isDesktop && <Loading />} */}
+      <Carousel homePage images={imageSizes()} />
+    </Horizontal>
+  );
+};
 
 export default Home;

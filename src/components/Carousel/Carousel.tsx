@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/quotes */
 // /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import styled from 'styled-components';
@@ -10,10 +11,16 @@ import { Carousel as C } from 'react-responsive-carousel';
 
 const SmallSizeScreen = {
   sizes: `(max-width: 1440px) 15vw, 40vw`,
+  layout: `responsive`,
+  height: `1280`,
+  width: `1920`,
+  objectFit: 'fill',
 };
 
 const FrontPageScreen = {
   sizes: `(max-width: 600px) 15w, (max-width: 1441px) 40vw, 70vw`,
+  layout: `fill`,
+  objectFit: 'fill',
 };
 
 export const Carousel: React.FC<{ images: string[]; homePage: boolean }> = ({
@@ -34,15 +41,7 @@ export const Carousel: React.FC<{ images: string[]; homePage: boolean }> = ({
     >
       {images.map(v => (
         <MyDiv key={v}>
-          <Image
-            {...props}
-            layout="responsive"
-            height={1280}
-            width={1920}
-            priority
-            src={v}
-            alt="Myndir af mat og staðnum"
-          />
+          <Image {...props} priority src={v} alt="Myndir af mat og staðnum" />
         </MyDiv>
       ))}
     </StyledCarousel>

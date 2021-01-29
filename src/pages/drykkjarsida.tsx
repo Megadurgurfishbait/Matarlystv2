@@ -3,6 +3,7 @@ import React from 'react';
 import { NextSeo } from 'next-seo';
 
 import { SiteURL } from '@/Routes';
+import { images } from '@/FakeData';
 import { drykkir } from '../db.json';
 
 import { Layout } from '../Layouts/Layout';
@@ -28,7 +29,7 @@ const Drykkjarsedill: React.FC<{}> = () => {
       {isPhone ? (
         <MenuForPhones />
       ) : (
-        <Layout images={[`/static/Restaurant2.jpg`, `/static/haed-matur.jpg`]}>
+        <Layout images={images}>
           <MenuTab isFood={false} Map={drykkir} />
         </Layout>
       )}

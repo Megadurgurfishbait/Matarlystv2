@@ -1,5 +1,6 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
+import { images } from '@/FakeData';
 import { matsedill } from '@/db.json';
 import { ShowDesktopContext } from '@/Context/ShowDesktop';
 // Components
@@ -28,7 +29,7 @@ const Menu: React.FC<{}> = () => {
       {isPhone ? (
         <MenuForPhones />
       ) : (
-        <Layout images={[`/static/Restaurant2.jpg`, `/static/haed-matur.jpg`]}>
+        <Layout images={images}>
           <MenuTab isFood Map={matsedill} />
         </Layout>
       )}

@@ -3,7 +3,7 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
 import { NextSeo } from 'next-seo';
-
+import { images } from '@/FakeData';
 import { Layout } from '@/Layouts';
 import { Info } from '@/components';
 import { SiteURL } from '@/Routes';
@@ -20,7 +20,7 @@ const Upplysingar: React.FC = () => {
     },
   };
   return (
-    <Layout images={[`/static/Restaurant2.jpg`, `/static/haed-matur.jpg`]}>
+    <Layout images={images}>
       <NextSeo {...SEO} />
       <Info />
     </Layout>
