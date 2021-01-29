@@ -1,11 +1,18 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 import config from 'react-reveal/globals';
+
 import { DefaultSeo, SocialProfileJsonLd, LocalBusinessJsonLd } from 'next-seo';
 import { GlobalStyle } from '../Styles';
-import { Header, Footer } from '../components';
+import { Footer } from '../components';
 import ShowDesktopContextProvider from '../Context/ShowDesktop';
 import { SiteURL } from '../Routes';
 import SEO from '../../next-seo.config';
+
+const Header = dynamic(
+  () => import('../components/Header').then(module => module.Header),
+  { ssr: false },
+);
 
 config({ ssrFadeout: true });
 
