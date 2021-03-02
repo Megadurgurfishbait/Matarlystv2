@@ -40,6 +40,7 @@ export default function MyApp({ Component, pageProps }) {
         description="Veitingastaður við aðalgötu Selfossbæjar"
         url={`${SiteURL}/upplysingar`}
         telephone="+3547931952"
+        priceRange="$$"
         address={{
           streetAddress: 'Austurvegur 35',
           addressCountry: 'IS',
@@ -47,6 +48,10 @@ export default function MyApp({ Component, pageProps }) {
           addressRegion: 'Árborg',
           addressLocality: 'Selfoss',
         }}
+        sameAs={[
+          'https://www.instagram.com/matarlyst.cafe.bar.restaurant/',
+          'https://www.facebook.com/Matarlyst-Caf%C3%A9-Bar-Restaurant-107006814510537',
+        ]}
         geo={{
           latitude: '63.9374',
           longitude: '-20.9925',

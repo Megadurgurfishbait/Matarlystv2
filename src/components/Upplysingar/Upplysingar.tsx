@@ -59,7 +59,7 @@ export const Info: React.FC<{}> = () => (
       <ul>
         <U.FlexDiv dir="column">
           <span>
-            S<U.SPAN>:</U.SPAN> 846 1151
+            S<U.SPAN>:</U.SPAN> 793 1952
           </span>
           <span>
             P<U.SPAN>:</U.SPAN> Best að senda skilaðboð á Facebook
