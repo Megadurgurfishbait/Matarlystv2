@@ -3,100 +3,85 @@
     "Smáréttir": [
       {
         "title": "Hvítlauks chili risarækjur",
-        "Ingred": "Hvítlauks chili risarækjur, kirsuberjatómatar, dill",
-        "price": "1490kr"
+        "Ingred": "Risarækjur, kirsuberjatómatar og parmesan borið fram á heitri pönnu með grilluðu súrdeigsbrauði",
+        "price": "2190kr"
       },
       {
         "title": "Huevos Rotos",
-        "Ingred": "Franskar, Spælt egg, hráskinka",
-        "price": "1490kr"
+        "Ingred": "Franskar, Spælt egg, hráskinka, dill",
+        "price": "1790kr"
       },
       {
-        "title": "Djúpsteiktar rækjur",
-        "Ingred": "Kókos-karrý hrísgrjón, salat, súrsæt sósa",
-        "price": "1590kr"
+        "title": "Franskar",
+        "Ingred": "Kokteilsósa eða Chilli majónes",
+        "price": "990kr"
       },
       {
-        "title": "Franskar með chili majónes eða kokteil",
-        "Ingred": "",
+        "title": "Grillað brokkolí",
+        "Ingred": "Grillað brokkolí, parmesan, crema sósa, sítróna",
         "price": "990kr"
       }
     ],
     "Dönsk rúgbrauð": [
       {
         "title": "Kæfa",
-        "Ingred": "Heit kæfa, beikon, sveppir, pikklað rauðkál, rifsberjahlaup, piparsósa",
-        "price": "1590kr"
-      },
-      {
-        "title": "Roast Beef",
-        "Ingred": "Nautakjöt, stökkur laukur, súrsaðar gúrkur, matarlystar remó",
-        "price": "1590kr"
+        "Ingred": "Heit kæfa, beikon, sveppir, rauðkál, rifsberjahlaup, piparsósa",
+        "price": "1790kr"
       },
       {
         "title": "Rauðspretta",
-        "Ingred": "Rauðspretta, rækjur, sítrónu majónes, stökkur laukur, dill",
+        "Ingred": "Panneurð rauðspretta, rækjur, sítrónu majónes, remúlaði stökkur laukur, dill",
         "price": "1900kr"
       }
     ],
     "Spænsk súdeigsbrauð": [
       {
         "title": "Hráskinska",
-        "Ingred": "Hvítlauksristað brauð, tómatkrem, klettasalat, parmesan",
-        "price": "1590kr"
+        "Ingred": "Hvítlauksristað súrdeigsbrauð, tómatkrem, klettasalat, parmesan",
+        "price": "1790kr"
       },
       {
-        "title": "Djúpsteiktar rækjur",
-        "Ingred": "Hvítlauksristað brauð, sítrónu majónes, klettasalat, pikklaður rauðlaukur, dill",
-        "price": "1590kr"
-      },
-      {
-        "title": "Tómatar",
-        "Ingred": "Hvítlauksristað brauð, Mozzarella, klettasalat, tómatkrem, pestó",
-        "price": "1590kr"
-      },
-      {
-        "title": "Reykur Lax",
-        "Ingred": "Hvítlauksristað brauð, hrærð egg, piparsósa, dill",
-        "price": "1900kr"
+        "title": "Rækjur tempura",
+        "Ingred": "Hvítlauksristað súrdeigsbrauð, sítrónu majónes, klettasalat, sýrður rauðlaukur",
+        "price": "1790kr"
       }
     ],
     "Mjúk Tortilla": [
       {
-        "Ingred": "Veljið eina úr a, b, c eða d fyrir 1490kr. \n  Tvær fyrir 2490kr. \n Þrjár fyrir 3450kr."
+        "Ingred": "Veljið eina úr a, b, c, d eða e fyrir 1490kr. \n  Tvær fyrir 2300kr. \n Þrjár fyrir 2800kr."
       },
       {
-        "title": "Djúpsteiktar rækjur",
-        "Ingred": "Klettasalat, sítrónu majónes, pikklað rauðkál, dill",
+        "title": "Rækjur Tempura",
+        "Ingred": "Rækjur, klettasalat, sítrónu majónes, rauðkál",
         "numero": "a"
       },
       {
-        "title": "Kjúklingur",
-        "Ingred": "Klettasalat, chili majónes, paprika, pikklað rauðkál",
+        "title": "Grillaður Kjúklingur",
+        "Ingred": "Kjúklingur, klettasalat, hrásalat, crema sósa, sýrður rauðlaukur",
         "numero": "b"
       },
       {
         "title": "Rifið BBQ Grísakjöt",
-        "Ingred": "Súrar gúrkur, pipar majónes, stökkur laukur, pikklað rauðkál",
+        "Ingred": "Súrar gúrkur, pipar majónes, stökkur laukur",
         "numero": "c"
       },
       {
-        "title": "Vegan taco",
-        "Ingred": "Djúpsteikt brokkolí, vegan chili majónes, klettasalat, paprika, pikklað rauðkál",
+        "title": "Brokkolí Tempua ( vegan )",
+        "Ingred": "Brokkolí tempura, chilli majónes, klettasalat, paprika, rauðkál",
+        "numero": "d"
+      },
+      {
+        "title": "Panneraður Þorskur",
+        "Ingred": "Þorskur, ananas salsa, chilli majónes, sýrður rauðlaukur, klettasalat",
         "numero": "d"
       },
       {
         "title": "Andartaco",
-        "Ingred": "Rifið andalæri, klettasalat, pikklaður rauðlaukur, sesam majónes, sykraðar valhnetur",
+        "Ingred": "Anda confit, klettasalat, sýrður rauðlaukur, seasam majones, sykraðar valhnetur",
         "price": "1790kr"
       }
     ],
     "Aðalréttir": [
-      {
-        "title": "Kjúklinga samloka",
-        "Ingred": "Beikon, chili majónes, klettasalat, paprika, tómatar, pestó, parmesan",
-        "price": "2850kr"
-      },
       {
         "title": "Ostborgari",
         "Ingred": "140gr nautakjöt, pipar majónes, klettasalat, tómatar, ostur",
@@ -104,7 +89,7 @@
       },
       {
         "title": "Matarlystborgari",
-        "Ingred": "140gr nautakjöt, pipar majónes, pikklað rauðkál, súrar gúrkur, klettasalat, ostur",
+        "Ingred": "140gr nautakjöt, pipar majónes, rauðkál, súrar gúrkur, klettasalat, ostur",
         "price": "2650kr"
       },
       {
@@ -113,20 +98,35 @@
         "price": "2650kr"
       },
       {
-        "title": "Vegan samloka",
-        "Ingred": "Djúpsteikt brokkolí, klettasalat, paprika, tómatar, pestó, vegan chili majónes",
+        "title": "Kjúklinga samloka",
+        "Ingred": "Kjúklingur, beikon, chili majónes, klettasalat, paprika, tómatar, pestó, parmesan",
+        "price": "2850kr"
+      },
+      {
+        "title": "Brokkolí samloka ( vegan )",
+        "Ingred": "Brokkolí Tempura, klettasalat, paprika, tómatar, pestó, chili majónes",
+        "price": "2250kr"
+      },
+      {
+        "title": "Pulled pork samloka",
+        "Ingred": "Rifið BBQ Grísakjöt, hrásalat, dijon sinnep, súrar gúrkur",
         "price": "2850kr"
       }
     ],
     "Salöt": [
       {
         "title": "Kjúklingasalat",
-        "Ingred": "Kjúklingur, salatblanda, pikklaður rauðlaukur, tómatar, chili majónes, parmesan, sykraðar valhnetur, balsamic dressing",
-        "price": "2520kr"
+        "Ingred": "Kjúklingur, salatblanda, sýrður rauðlaukur, tómatar, chili majónes, parmesan, sykraðar valhnetur, balsamic dressing",
+        "price": "2550kr"
       },
       {
         "title": "Sjávarréttarsalat",
-        "Ingred": "Hörpudiskur, hvítlauks chili rækjur, salatblanda, piklaður rauðlaukur, sykraðar valhnetur, basil dressing, sítrónu majónes, parmesan",
+        "Ingred": "Hörpudiskur, hvítlauks chili risarækjur, salatblanda, sýrður rauðlaukur, sykraðar valhnetur, basil dressing, sítrónu majónes, parmesan",
+        "price": "2980kr"
+      },
+      {
+        "title": "Andasalat",
+        "Ingred": "Anda confit, salatblanda, sýrður rauðlaukur, sykraðar valhnetur, balsamic dressing, sesam majónes, parmesan",
         "price": "2980kr"
       }
     ],
@@ -138,10 +138,26 @@
       {
         "title": "Samloka með skinku, osti, frönskum og kokteilsósu",
         "price": "990kr"
+      },
+      {
+        "title": "Hamborgari með osti, tómatsósu og frönskum.",
+        "price": "1590kr"
+      }
+    ],
+    "Eftirréttir": [
+      {
+        "title": "Brownie",
+        "Ingred": "Borin fram með saltkaramellusósu, jarðaberja crumble og rjóma",
+        "price": "1190kr"
+      },
+      {
+        "title": "Crema Catalana",
+        "Ingred": "Flan með brenndum sykri, kanil og sítrónu zesti",
+        "price": "1090kr"
       }
     ]
   },
-  "drykkir" : {
+  "drykkir": {
     "Kaffi og Te": [
       {
         "title": "Americano",
@@ -237,7 +253,6 @@
         "title": "Carlsberg",
         "price": "1290kr"
       }
-
     ],
     "Freyðandi Drykkir": [
       {
